@@ -33,8 +33,8 @@ const ExperienceItem = (props) => {
     <TimelineItem
     >
       <TimelineSeparator>
-        <TimelineDot sx={{ bgcolor: highlight ? 'rgb(211, 206, 223,0.3)' : 'rgb(68,69,97)' }}/>
-        <TimelineConnector sx={{ bgcolor: highlight ? 'rgb(211, 206, 223,0.3)' : 'rgb(68,69,97)' }} />
+        <TimelineDot sx={{ bgcolor: highlight ? 'rgb(184,201,225,0.4)' : 'rgb(68,69,97)' }}/>
+        <TimelineConnector sx={{ bgcolor: highlight ? 'rgb(184,201,225,0.4)' : 'rgb(68,69,97)' }} />
       </TimelineSeparator>
       <motion.div
         whileHover={{ scale: 1.05 }}
@@ -55,6 +55,7 @@ const ExperienceItem = (props) => {
               sx={{
                 fontSize: '15px',
                 color: 'rgb(68,69,97)',
+                fontFamily: 'Ubuntu, sans-serif'
               }}
             >
               {experienceInfo.time}
@@ -65,6 +66,7 @@ const ExperienceItem = (props) => {
                   fontSize: '20px',
                   fontWeight: 'bold',
                   color: hovered ? 'rgb(219,237,255,0.75)' : 'rgb(68,69,97)',
+                  fontFamily: 'Ubuntu, sans-serif'
                 }}
               >
                 {experienceInfo.title}
@@ -86,7 +88,8 @@ const ExperienceItem = (props) => {
               sx={{
                 fontSize: '15px',
                 color: 'rgb(68,69,97)',
-                width: '450px'
+                width: '450px',
+                fontFamily: 'Ubuntu, sans-serif'
               }}
             >
               {experienceInfo.description}

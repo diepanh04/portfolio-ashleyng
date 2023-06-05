@@ -41,9 +41,27 @@ const ProjectContainer = () => {
     alignItems: 'center',
     gap: '20px',
   }
+  const animation = {
+    offscreen: {x: 100, opacity: 0},
+    onscreen: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        bounce: 0.5,
+        duration: 2
+      }
+    }
+  }
 
   return (
-    <>
+    <motion.div
+      id="projects"
+      initial={"offscreen"}
+      whileInView={"onscreen"}
+      viewport={{ once: true }}
+      variants={animation}  
+    >
       <div style={heading}>
         <motion.div
           whileHover={{ rotate: 180 }}
@@ -54,7 +72,8 @@ const ProjectContainer = () => {
           sx={{
             fontSize: '30px',
             fontWeight: 'bold',
-            color: 'rgb(63,63,98)'
+            color: 'rgb(63,63,98)',
+            fontFamily: 'Ubuntu, sans-serif'
           }}
         >
           My Projects
@@ -67,7 +86,7 @@ const ProjectContainer = () => {
           </Grid>
         ))}
       </Grid>
-    </>
+    </motion.div>
   );
 };
 

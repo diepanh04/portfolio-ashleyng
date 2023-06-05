@@ -63,16 +63,43 @@ const Experience = () => {
   const showDescription = (experience) => {
     setSelectedItem(experience);
   }
+  const animation = {
+    offscreen: {x: 100, opacity: 0},
+    onscreen: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        bounce: 0.5,
+        duration: 2
+      }
+    }
+  }
 
   return (
-    <>
+    <motion.div
+      id="experience"
+      initial={"offscreen"}
+      whileInView={"onscreen"}
+      viewport={{ once: true }}
+      variants={animation}  
+    >
       <div style={heading}>
         <motion.div
           whileHover={{ rotate: 180 }}
         >
           <LaptopIcon sx={{ fontSize: '40px', color: 'rgb(68,69,97)' }}/>
         </motion.div>
-        <Typography sx={{ fontSize: '30px', fontWeight: 'bold', color: 'rgb(68,69,97)' }}>My Experience</Typography>
+        <Typography
+          sx={{
+            fontSize: '30px',
+            fontWeight: 'bold',
+            color: 'rgb(68,69,97)',
+            fontFamily: 'Ubuntu, sans-serif'
+          }}
+        >
+          My Experience
+        </Typography>
       </div>
       <Grid container alignItems='center'>
         <Grid item xs={6}>
@@ -93,8 +120,14 @@ const Experience = () => {
             ))}
           </Timeline>
         </Grid>
-        <Grid item xs={6} sx={{ marginTop: '30px' }}>
-          <div
+        {(selectedItem !== null) &&  
+          <Grid item xs={6}>
+          <motion.div
+            initial={{ opacity: 0, x: -200 }}
+            animate={{
+              opacity: 1,
+              x: 0
+            }}
             style={{
               backgroundColor: selectedItem !== null ? 'rgb(188,192,223,0.3)' : 'none',
               padding: '30px',
@@ -102,10 +135,13 @@ const Experience = () => {
             }}
           > 
             <ExperienceDialog experience={selectedItem} />
-          </div>
-        </Grid>
+          </motion.div>
+        </Grid>        
+        
+        }
+
       </Grid>
-    </>
+    </motion.div>
   );
 }
 

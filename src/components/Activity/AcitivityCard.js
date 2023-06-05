@@ -6,18 +6,13 @@ import { Typography } from '@mui/material';
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
-import CollectionsOutlinedIcon from '@mui/icons-material/CollectionsOutlined';
-import ActivityGalleryDialog from './ActivityGalleryDialog';
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 
 const ActivityCard = (props) => {
   const {activity} = props;
   const [hovered, setHovered] = useState(false);
   const [open, setOpen] = useState(false);
-  const [gallery, setGallery] = useState([]);
-  const handleOpenDialog = (gallery) => {
-    setOpen(true);
-    setGallery(gallery)
-  }
 
   return (
     <Accordion
@@ -25,6 +20,7 @@ const ActivityCard = (props) => {
       sx={{
         backgroundColor: 'rgb(182,202,229,0.5)',
         padding: '30px',
+        cursor: 'pointer'
       }}
     >
       <AccordionSummary>
@@ -43,7 +39,8 @@ const ActivityCard = (props) => {
                   sx={{
                     fontSize: '25px',
                     fontWeight: 'bold',
-                    color: 'rgb(51,63,74)'
+                    color: 'rgb(51,63,74)',
+                    fontFamily: 'Ubuntu, sans-serif'
                   }}
                 >
                   {activity.name}
@@ -55,7 +52,8 @@ const ActivityCard = (props) => {
                     fontSize: '20px',
                     color: 'rgb(28,48,68)',
                     fontWeight: hovered ? 'bold' : 'none',
-                    paddingTop: '5px'
+                    paddingTop: '5px',
+                    fontFamily: 'Ubuntu, sans-serif'
                   }}
                 >
                   {activity.title}
@@ -65,11 +63,15 @@ const ActivityCard = (props) => {
                 <Typography
                   sx={{
                     color: 'rgb(51,63,74)',
-                    paddingTop: '5px'
+                    paddingTop: '5px',
+                    fontFamily: 'Ubuntu, sans-serif'
                   }}
                 >
                   {activity.description}
                 </Typography>
+              </Grid>
+              <Grid item xs={12} textAlign='center' marginTop="15px">
+                {open ? <KeyboardDoubleArrowUpIcon /> : <KeyboardDoubleArrowDownIcon />}
               </Grid>
             </Grid>
           </Grid>

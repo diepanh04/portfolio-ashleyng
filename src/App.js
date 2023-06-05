@@ -1,12 +1,14 @@
 import React from 'react';
 import { Container, Grid } from '@mui/material/';
 import NavBar from "./components/NavBar";
-import AboutMeCard from "./components/AboutMeCard";
+import HeaderCard from "./components/HeaderCard";
 import Circle from "./components/Circle";
 import Experience from "./components/Experience/Experience";
 import ProjectContainer from "./components/Projects/ProjectContainer";
 import Introduction from './components/Introduction';
 import ActivityContainer from './components/Activity/ActivityContainer';
+import Typography from '@mui/material/Typography';
+import './index.css'
 
 function App() {
   const navStyle = {
@@ -42,15 +44,23 @@ function App() {
     // { size: 200, color: 'rgb(183, 211, 223, 0.2)', top: '1000px', left: '150px' },
   ];
 
+  // linear-gradient(55deg, rgba(194,202,210,1) 0%, rgba(144,146,186,1) 50%, rgba(137,138,166,1) 64%)
+  // linear-gradient(72deg, rgba(187,207,217,1) 0%, rgba(146,157,194,1) 40%, rgba(113,104,147,1) 100%)
+
   return (
-    <div style={{ background: 'linear-gradient(72deg, rgba(187,207,217,1) 0%, rgba(146,157,194,1) 40%, rgba(113,104,147,1) 100%)', position: 'relative' }}>
+    <div 
+      style={{
+        background: 'linear-gradient(55deg, rgba(194,202,210,1) 0%, rgba(144,146,186,1) 50%, rgba(137,138,166,1) 100%)',
+        position: 'relative'
+      }}
+    >
       <Container>
         <Grid container justifyContent="center">
           <Grid item style={navStyle}>
             <NavBar />
           </Grid>
           <Grid item xs={12} style={cardStyle}>
-            <AboutMeCard />
+            <HeaderCard />
           </Grid>
           <Grid item xs={12} style={projStyle}>
             <Introduction />
@@ -64,6 +74,9 @@ function App() {
           <Grid item xs={12} style={projStyle}>
             <ActivityContainer />
           </Grid>
+        <Grid item xs={12} style={{ padding: '20px', textAlign: 'center' }}>
+          <Typography>Designed and Built by Ashley Nguyen</Typography>
+        </Grid>
         </Grid>
       </Container>
       {circles.map((circle, index) => (

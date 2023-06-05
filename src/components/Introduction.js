@@ -22,11 +22,13 @@ const Introduction = () => {
     fontSize: '20px',
     fontWeight: 'bold',
     color: 'rgb(68,69,97)',
+    fontFamily: 'Ubuntu, sans-serif',
   }
   const paragraph = {
     fontSize: '18px',
     color: 'rgb(54,55,78)',
-    width: '80%'
+    width: '80%',
+    fontFamily: 'Ubuntu, sans-serif'
   }
   const heading = {
     fontWeight: 'bold',
@@ -35,8 +37,38 @@ const Introduction = () => {
     alignItems: 'center',
     gap: '20px',
   }
+  const textAnimation = {
+    offscreen: {y: 100},
+    onscreen: {
+      y: 0,
+      transition: {
+        type: 'spring',
+        bounce: 0.5,
+        duration: 2
+      }
+    }
+  }
+  const animation = {
+    offscreen: {x: 100, opacity: 0},
+    onscreen: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        bounce: 0.5,
+        duration: 2
+      }
+    }
+  }
+  
   return (
-    <>
+    <motion.div
+      id="introduction"
+      initial={"offscreen"}
+      whileInView={"onscreen"}
+      viewport={{ once: true }}
+      variants={animation}  
+    >
       <div style={heading}>
         <motion.div
           whileHover={{ rotate: 180 }}
@@ -47,7 +79,8 @@ const Introduction = () => {
             sx={{
               fontSize: '30px',
               fontWeight: 'bold',
-              color: 'rgb(68,69,97)'
+              color: 'rgb(68,69,97)',
+              fontFamily: 'Ubuntu, sans-serif'
             }}
           >
             About Me
@@ -83,20 +116,27 @@ const Introduction = () => {
             <Typography style={info}>May 2024</Typography>
           </div>
         </Grid>
-        <Grid item xs={8}>  
-          <Typography style={paragraph}>
-            Hi, my name is <span style={{ color: 'rgb(188,189,208)', fontWeight: 'bold' }}>Ashley Nguyen</span>.
-            I am an aspiring software engineer who is passionate about clean codes that make positive impacts.
-            I hold great values in user experience and orient my work with a customer centric mindset. 
-          </Typography>
-          <br />
-          <Typography style={paragraph}> 
-            I believe that meaningful human connections and mentorship play important roles in one’s development.
-            I am eager to connect with like-minded individuals who wish to give and to receive.
-          </Typography>
+        <Grid item xs={8}>
+          <motion.div 
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true }}
+          variants={textAnimation}
+          >
+            <Typography style={paragraph}>
+              Hi, my name is <span style={{ opacity: '0.8', fontWeight: 'bold' }}>Ashley Nguyen</span>.
+              I am an aspiring software engineer who is passionate about clean codes that make positive impacts.
+              I hold great values in user experience and orient my work with a customer centric mindset. 
+            </Typography>
+            <br />
+            <Typography style={paragraph}> 
+              I believe that meaningful human connections and mentorship play important roles in one’s development.
+              I am eager to connect with like-minded individuals who wish to give and to receive.
+            </Typography>
+          </motion.div>
         </Grid>
       </Grid>
-    </>
+    </motion.div>
   )
 }
 

@@ -37,7 +37,8 @@ const ProjectCard = (props) => {
             sx={{
               fontSize: '25px',
               fontWeight: 'bold',
-              color: hovered ? 'rgb(219,237,255)' : 'rgb(63,63,98)'
+              color: hovered ? 'rgb(219,237,255)' : 'rgb(63,63,98)',
+              fontFamily: 'Ubuntu, sans-serif'
             }}
           >
             {project.title}
@@ -51,7 +52,7 @@ const ProjectCard = (props) => {
             color: 'rgb(65,65,90)',
           }}
         >
-          <Typography>{project.description}</Typography>
+          <Typography style={{ fontFamily: 'Ubuntu, sans-serif' }}>{project.description}</Typography>
         </Grid>
         <Grid
           item
@@ -59,6 +60,7 @@ const ProjectCard = (props) => {
             marginTop: '15px',
             maxWidth: '300px',
             color: 'rgb(51,63,74)',
+            fontFamily: 'Ubuntu, sans-serif'
           }}
         >
           {project.skills.map((skill) => (
@@ -69,6 +71,7 @@ const ProjectCard = (props) => {
                 marginRight: '5px',
                 marginBottom: '5px',
                 color: 'rgb(63,63,98)',
+                fontFamily: 'Ubuntu, sans-serif'
               }}
             ></Chip>
           ))}
