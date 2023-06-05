@@ -84,7 +84,7 @@ const AboutMeCard = () => {
               fontFamily: 'Ubuntu, sans-serif',
               marginBottom: '-20px'
             }}
-            className="name"
+            className="gradiant-color"
           >
             Hello, world! My name is
           </Typography>
@@ -96,7 +96,7 @@ const AboutMeCard = () => {
               fontFamily: 'Ubuntu, sans-serif',
               marginBottom: '-15px'
             }}
-            className="name"
+            className="gradiant-color"
           >
             Ashley Nguyen
           </Typography>
@@ -107,7 +107,7 @@ const AboutMeCard = () => {
               fontSize: '30px',
               fontFamily: 'Ubuntu, sans-serif',
             }}
-            className="name"
+            className="gradiant-color"
           >
             aspiring software engineer
           </Typography>
