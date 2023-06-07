@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-ashleyng/static/css/main.69e53da9.css",
-    "main.js": "/portfolio-ashleyng/static/js/main.c2133f4d.js",
+    "main.js": "/portfolio-ashleyng/static/js/main.a8beb24a.js",
     "static/js/787.fb771931.chunk.js": "/portfolio-ashleyng/static/js/787.fb771931.chunk.js",
     "static/media/vsa-3.JPG": "/portfolio-ashleyng/static/media/vsa-3.aa88b68fbd260a6e66a1.JPG",
     "static/media/vsa-2.JPG": "/portfolio-ashleyng/static/media/vsa-2.21c46de07fe9da3c68b2.JPG",
@@ -14,13 +14,14 @@
     "static/media/personal.png": "/portfolio-ashleyng/static/media/personal.69c7ee435d319a323775.png",
     "static/media/personal-2.jpeg": "/portfolio-ashleyng/static/media/personal-2.8ccae615e75be1dd0189.jpeg",
     "static/media/sw-1.jpg": "/portfolio-ashleyng/static/media/sw-1.f061a2c5ac51a5e54104.jpg",
+    "static/media/logo.png": "/portfolio-ashleyng/static/media/logo.111c60598d406809337e.png",
     "index.html": "/portfolio-ashleyng/index.html",
     "main.69e53da9.css.map": "/portfolio-ashleyng/static/css/main.69e53da9.css.map",
-    "main.c2133f4d.js.map": "/portfolio-ashleyng/static/js/main.c2133f4d.js.map",
+    "main.a8beb24a.js.map": "/portfolio-ashleyng/static/js/main.a8beb24a.js.map",
     "787.fb771931.chunk.js.map": "/portfolio-ashleyng/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.69e53da9.css",
-    "static/js/main.c2133f4d.js"
+    "static/js/main.a8beb24a.js"
   ]
 }
