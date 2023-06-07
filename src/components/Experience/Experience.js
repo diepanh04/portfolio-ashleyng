@@ -100,6 +100,7 @@ const Experience = () => {
         >
           My Experience
         </Typography>
+        <hr style={{ width: '30%', textAlign: 'left', marginLeft: '0', marginTop: '10px', borderColor: 'rgb(68,69,97,0.5)' }} />
       </div>
       <Grid container alignItems='center'>
         <Grid item xs={6}>

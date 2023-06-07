@@ -12,35 +12,38 @@ const NavBar = () => {
   ];
 
   return (
-    <AppBar position='static' style={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
-      <Toolbar disableGutters>
-        <Grid container spacing={3} alignItems="center">
-          <Grid item>
-            {items.map((item) => (
-              <Link
-                key={item.id}
-                to={item.id}
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={item.duration}
-                onMouseEnter={() => setHoveredLink(item.id)}
-                onMouseLeave={() => setHoveredLink(null)}
-                style={{
-                  color: hoveredLink === item.id ? 'white' : 'rgb(177,178,212)',
-                  marginLeft: '20px',
-                  fontSize: '18px',
-                  cursor: 'pointer',
-                  fontFamily: 'Ubuntu, sans-serif',
-                }}
-              >
-                {item.name}
-              </Link>
-            ))}
+    <>
+      <AppBar position='static' style={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
+        <Toolbar disableGutters>
+          <Grid container spacing={3}>
+            <Grid item style={{ marginLeft: 1000, marginTop: 20 }}>
+              {items.map((item) => (
+                <Link
+                  key={item.id}
+                  to={item.id}
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={item.duration}
+                  onMouseEnter={() => setHoveredLink(item.id)}
+                  onMouseLeave={() => setHoveredLink(null)}
+                  style={{
+                    color: hoveredLink === item.id ? 'white' : '#C3C6E8',
+                    marginLeft: '20px',
+                    fontSize: '20px',
+                    cursor: 'pointer',
+                    fontFamily: 'Ubuntu, sans-serif',
+                  }}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </Grid>
           </Grid>
-        </Grid>
-      </Toolbar>
-    </AppBar>
+        </Toolbar>
+      </AppBar>
+      <hr style={{ width: '30%', textAlign: 'right', marginRight: '0', borderColor: 'rgb(68,69,97,0.3)' }} />
+    </>
   );
 };
 
