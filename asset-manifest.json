@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio-ashleyng/static/css/main.696785c2.css",
+    "main.js": "/portfolio-ashleyng/static/js/main.8b68173e.js",
+    "static/js/787.fb771931.chunk.js": "/portfolio-ashleyng/static/js/787.fb771931.chunk.js",
+    "static/media/vsa-3.JPG": "/portfolio-ashleyng/static/media/vsa-3.aa88b68fbd260a6e66a1.JPG",
+    "static/media/vsa-2.JPG": "/portfolio-ashleyng/static/media/vsa-2.21c46de07fe9da3c68b2.JPG",
+    "static/media/goodwatch.png": "/portfolio-ashleyng/static/media/goodwatch.b366d280e0e8dd90262d.png",
+    "static/media/isac-0.jpg": "/portfolio-ashleyng/static/media/isac-0.4aace56973b968d2f32d.jpg",
+    "static/media/triwic-0.JPG": "/portfolio-ashleyng/static/media/triwic-0.922ec693160c8a48b136.JPG",
+    "static/media/isac-3.jpg": "/portfolio-ashleyng/static/media/isac-3.cca87e981b7fa998373c.jpg",
+    "static/media/isac-1.JPG": "/portfolio-ashleyng/static/media/isac-1.dfb88dc001742a3c0e4a.JPG",
+    "static/media/vsa-0.JPG": "/portfolio-ashleyng/static/media/vsa-0.e8c20bcbeb4703c69f7b.JPG",
+    "static/media/personal.png": "/portfolio-ashleyng/static/media/personal.69c7ee435d319a323775.png",
+    "static/media/personal-2.jpeg": "/portfolio-ashleyng/static/media/personal-2.8ccae615e75be1dd0189.jpeg",
+    "static/media/sw-1.jpg": "/portfolio-ashleyng/static/media/sw-1.f061a2c5ac51a5e54104.jpg",
+    "index.html": "/portfolio-ashleyng/index.html",
+    "main.696785c2.css.map": "/portfolio-ashleyng/static/css/main.696785c2.css.map",
+    "main.8b68173e.js.map": "/portfolio-ashleyng/static/js/main.8b68173e.js.map",
+    "787.fb771931.chunk.js.map": "/portfolio-ashleyng/static/js/787.fb771931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.696785c2.css",
+    "static/js/main.8b68173e.js"
+  ]
+}
