@@ -15,9 +15,10 @@ const NavBar = () => {
     <>
       <AppBar position='static' style={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
         <Toolbar disableGutters>
-          <Grid container spacing={3}>
-            <Grid item style={{ marginLeft: 1000, marginTop: 20 }}>
+          <Grid container spacing={3} sx={{ justifyContent: 'right', marginRight: '20px' }}>
+            <Grid item style={{ marginTop: 20 }}>
               {items.map((item) => (
+                
                 <Link
                   key={item.id}
                   to={item.id}
@@ -42,7 +43,7 @@ const NavBar = () => {
           </Grid>
         </Toolbar>
       </AppBar>
-      <hr style={{ width: '30%', textAlign: 'right', marginRight: '0', borderColor: 'rgb(68,69,97,0.3)' }} />
+      <hr style={{ width: '30%', textAlign: 'right', marginRight: '0', borderColor: '#C3C6E8' }} />
     </>
   );
 };

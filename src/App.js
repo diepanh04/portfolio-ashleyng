@@ -7,16 +7,12 @@ import Experience from "./components/Experience/Experience";
 import ProjectContainer from "./components/Projects/ProjectContainer";
 import Introduction from './components/Introduction';
 import ActivityContainer from './components/Activity/ActivityContainer';
+import ContactInfo from './components/ContactInfo';
 import Typography from '@mui/material/Typography';
 import './index.css';
 import logo from './assets/images/logo.png';
 
 function App() {
-  const navStyle = {
-    zIndex: 1,
-    marginLeft: 700,
-    marginTop: 30
-  };
   const cardStyle = {
     marginTop: '10%',
     zIndex: 1,
@@ -58,12 +54,10 @@ function App() {
       }}
     >
       <img src={logo} style={{ height: '150px', position: 'absolute', top: -50, left: -20, margin: '10px' }} alt="Logo" />
+      <ContactInfo />
       <NavBar />
       <Container>
         <Grid container>
-          {/* <Grid item style={navStyle}>
-            <NavBar />
-          </Grid> */}
           <Grid item xs={12} style={cardStyle}>
             <HeaderCard />
           </Grid>
