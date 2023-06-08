@@ -15,6 +15,9 @@ const Contacts = () => {
       >
         Let's Chat!
       </Typography>
+      <Typography>
+        
+      </Typography>
     </div>
   )
 };

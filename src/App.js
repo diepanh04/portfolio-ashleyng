@@ -77,7 +77,7 @@ function App() {
           <Grid item xs={12} style={projStyle}>
             <Contacts />
           </Grid>
-        <Grid item xs={12} style={{ padding: '20px', textAlign: 'center' }}>
+        <Grid item xs={12} style={{ padding: '20px', textAlign: 'center', color: 'rgb(51,63,74, 0.5)' }}>
           <Typography>Designed and Built by Ashley Nguyen</Typography>
         </Grid>
         </Grid>
