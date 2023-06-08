@@ -15,7 +15,7 @@ const ExperienceDialog = (props) => {
     fontSize: '20px',
     fontWeight: 'bold'
   }
-  console.log(experience.images);
+
   return (
     <div>
       {experience &&

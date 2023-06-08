@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import Grid from '@mui/material/Grid';
-import { Typography } from '@mui/material';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import ModeIcon from '@mui/icons-material/Mode';
 import SchoolIcon from '@mui/icons-material/School';
 import Face2Icon from '@mui/icons-material/Face2';
-import myPhoto from '../assets/images/personal-2.jpeg';
+import myPhoto from '../../assets/images/personal-2.jpeg';
+import TechStack from './TechStack';
 
 const Introduction = () => {
   const [hovered, setHovered] = useState(false);
@@ -93,7 +95,7 @@ const Introduction = () => {
             <motion.div
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
-              animate={{ y: hovered ? -20 : 0 }}
+              whileHover={{ scale: 1.05 }}
             >
               <img
                 src={myPhoto}
@@ -138,9 +140,9 @@ const Introduction = () => {
             </motion.div>
           </Grid>
         </Grid>
-        <Grid item>
-
-        </Grid>
+        {/* <Grid item>
+          <TechStack />
+        </Grid> */}
       </Grid>
     </motion.div>
   )

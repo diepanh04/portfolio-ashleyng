@@ -5,8 +5,9 @@ import Banner from "./components/Banner";
 import Circle from "./components/Circle";
 import Experience from "./components/Experience/Experience";
 import ProjectContainer from "./components/Projects/ProjectContainer";
-import Introduction from './components/Introduction';
+import Introduction from './components/About Me/Introduction';
 import ActivityContainer from './components/Activity/ActivityContainer';
+import Contacts from './components/Contacts/Contacts';
 import ContactInfo from './components/ContactInfo';
 import Typography from '@mui/material/Typography';
 import './index.css';
@@ -72,6 +73,9 @@ function App() {
           </Grid>
           <Grid item xs={12} style={projStyle}>
             <ActivityContainer />
+          </Grid>
+          <Grid item xs={12} style={projStyle}>
+            <Contacts />
           </Grid>
         <Grid item xs={12} style={{ padding: '20px', textAlign: 'center' }}>
           <Typography>Designed and Built by Ashley Nguyen</Typography>

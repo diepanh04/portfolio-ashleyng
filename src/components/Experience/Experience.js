@@ -56,7 +56,7 @@ const experience = [
     description: 'With this on-campus internship, I was able to learn iPaaS to automate or optimize some IT-related processes within the campus, requiring low-code but highly logical thinking and understanding of contexts.',
     bullets: ['Automated the notification system using iPaaS to target stakeholders and streamlined the process for classroom inspection purposes, reducing 80% response time to IT issues',
               'Enhanced Performance Scorecard by adding 15+ filter dimensions and created a Priority Rubrik leveraging Tableau, doubling 35,000+ IT issue identificationn rates and reducing solution time by 70%'],
-    images: [miami]
+  images: [miami]
   },
 ]
 

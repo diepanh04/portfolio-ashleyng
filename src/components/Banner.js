@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Typography, Grid, Box } from '@mui/material/';
+import { Typography, Grid, Box, Button, Stack } from '@mui/material/';
+import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import myphoto from '../assets/images/personal.png';
 
 const Banner = () => {
@@ -66,6 +67,7 @@ const Banner = () => {
             sx={{
               maxWidth: '600px',
               margin: '0 auto',
+              marginBottom: '15px',
               backgroundColor: 'rgb(195,198,232,0.5)',
               padding: '10px',
               borderRadius: '10px'
@@ -84,6 +86,22 @@ const Banner = () => {
               a self-motivated learner, a gym aholic, and a food lover.
             </Typography>
           </Box>
+          <Stack direction="row" spacing={2}>
+            <Button
+              variant="outlined"
+              endIcon={
+                <FileDownloadOutlinedIcon />
+              }
+              sx={{
+                borderColor: 'rgb(68,69,97)',
+                color: 'rgb(68,69,97)'
+              }}
+              href="https://drive.google.com/file/d/1CBeBRo9s_Uvg6otuqN4PQfA39x7nWC-r/view?usp=sharing"
+              target="_blank"
+            >
+              My Resume
+            </Button>
+          </Stack>
         </motion.div>
       </Grid>
       <Grid
