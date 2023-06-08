@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from "framer-motion";
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+import IconButton from '@mui/material/IconButton';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 const Contacts = () => {
   return (
@@ -18,6 +20,16 @@ const Contacts = () => {
       <Typography>
         
       </Typography>
+      <IconButton
+        variant="outlined"
+        sx={{
+          borderColor: 'rgb(68,69,97)',
+          color: 'rgb(68,69,97)'
+        }}
+        href="mailto:"
+      >
+        <EmailOutlinedIcon sx={{ fontSize: '40px' }}/>
+      </IconButton>
     </div>
   )
 };
