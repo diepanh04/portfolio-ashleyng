@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Grid } from '@mui/material/';
 import NavBar from "./components/NavBar";
-import HeaderCard from "./components/HeaderCard";
+import Banner from "./components/Banner";
 import Circle from "./components/Circle";
 import Experience from "./components/Experience/Experience";
 import ProjectContainer from "./components/Projects/ProjectContainer";
@@ -14,15 +14,15 @@ import logo from './assets/images/logo.png';
 
 function App() {
   const cardStyle = {
-    marginTop: '10%',
+    marginTop: '20%',
     zIndex: 1,
   };
   const expStyle = {
-    marginTop: '20%',
+    marginTop: '30%',
     zIndex: 1,
   }
   const projStyle = {
-    marginTop: '20%',
+    marginTop: '30%',
     zIndex: 1,
   }
 
@@ -59,7 +59,7 @@ function App() {
       <Container>
         <Grid container>
           <Grid item xs={12} style={cardStyle}>
-            <HeaderCard />
+            <Banner />
           </Grid>
           <Grid item xs={12} style={projStyle}>
             <Introduction />

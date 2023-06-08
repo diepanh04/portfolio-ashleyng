@@ -31,7 +31,7 @@ const NavBar = () => {
                   style={{
                     color: hoveredLink === item.id ? 'white' : '#C3C6E8',
                     marginLeft: '20px',
-                    fontSize: '20px',
+                    fontSize: '18px',
                     cursor: 'pointer',
                     fontFamily: 'Ubuntu, sans-serif',
                   }}
