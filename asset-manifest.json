@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-ashleyng/static/css/main.69e53da9.css",
-    "main.js": "/portfolio-ashleyng/static/js/main.a8beb24a.js",
+    "main.js": "/portfolio-ashleyng/static/js/main.acfa2cb0.js",
     "static/js/787.fb771931.chunk.js": "/portfolio-ashleyng/static/js/787.fb771931.chunk.js",
     "static/media/vsa-3.JPG": "/portfolio-ashleyng/static/media/vsa-3.aa88b68fbd260a6e66a1.JPG",
     "static/media/vsa-2.JPG": "/portfolio-ashleyng/static/media/vsa-2.21c46de07fe9da3c68b2.JPG",
@@ -10,18 +10,22 @@
     "static/media/triwic-0.JPG": "/portfolio-ashleyng/static/media/triwic-0.922ec693160c8a48b136.JPG",
     "static/media/isac-3.jpg": "/portfolio-ashleyng/static/media/isac-3.cca87e981b7fa998373c.jpg",
     "static/media/isac-1.JPG": "/portfolio-ashleyng/static/media/isac-1.dfb88dc001742a3c0e4a.JPG",
+    "static/media/rakuna-3.JPG": "/portfolio-ashleyng/static/media/rakuna-3.934f34724e77ae59489f.JPG",
     "static/media/vsa-0.JPG": "/portfolio-ashleyng/static/media/vsa-0.e8c20bcbeb4703c69f7b.JPG",
+    "static/media/rakuna-2.JPG": "/portfolio-ashleyng/static/media/rakuna-2.1d3a98cec5d4b1b3a8cf.JPG",
     "static/media/personal.png": "/portfolio-ashleyng/static/media/personal.69c7ee435d319a323775.png",
     "static/media/personal-2.jpeg": "/portfolio-ashleyng/static/media/personal-2.8ccae615e75be1dd0189.jpeg",
     "static/media/sw-1.jpg": "/portfolio-ashleyng/static/media/sw-1.f061a2c5ac51a5e54104.jpg",
+    "static/media/rakuna-1.jpeg": "/portfolio-ashleyng/static/media/rakuna-1.90f2945d7c3b938aba4e.jpeg",
+    "static/media/miami.png": "/portfolio-ashleyng/static/media/miami.dd710e60e4e14b0cbd82.png",
     "static/media/logo.png": "/portfolio-ashleyng/static/media/logo.111c60598d406809337e.png",
     "index.html": "/portfolio-ashleyng/index.html",
     "main.69e53da9.css.map": "/portfolio-ashleyng/static/css/main.69e53da9.css.map",
-    "main.a8beb24a.js.map": "/portfolio-ashleyng/static/js/main.a8beb24a.js.map",
+    "main.acfa2cb0.js.map": "/portfolio-ashleyng/static/js/main.acfa2cb0.js.map",
     "787.fb771931.chunk.js.map": "/portfolio-ashleyng/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.69e53da9.css",
-    "static/js/main.a8beb24a.js"
+    "static/js/main.acfa2cb0.js"
   ]
 }
