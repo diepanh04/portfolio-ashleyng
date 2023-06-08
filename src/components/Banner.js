@@ -37,7 +37,7 @@ const Banner = () => {
         marginLeft: '10%'
       }}    
     >
-      <Grid item sx={{ position: 'relative', zIndex: '1' }}>
+      <Grid item sx={{ position: 'relative', zIndex: '2' }}>
         <motion.div initial={'offscreen'} animate={'onscreen'} variants={textAnimation}>
           <Typography
             sx={{
@@ -91,50 +91,45 @@ const Banner = () => {
         sx={{
           position: 'absolute',
           top: '4%',
-          left: '45%'
+          left: '45%',
+          zIndex: '1'
         }}
       >
-        <motion.div
-          initial={'offscreen'}
-          animate={'onscreen'}
-          variants={imageAnimation}
+        <Box
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          sx={{
+            position: 'relative',
+            width: '30%',
+            margin: '0 auto',
+            borderRadius: '80px',
+            marginBottom: '20px',
+          }}
         >
-          <Box
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-            sx={{
-              position: 'relative',
-              width: '30%',
-              margin: '0 auto',
-              borderRadius: '80px',
-              marginBottom: '20px',
+          <img
+            src={myphoto}
+            style={{
+              width: '400px',
+              borderRadius: '30px',
             }}
-          >
-            <img
-              src={myphoto}
-              style={{
+          />
+          {!hovered && (
+            <Box
+              sx={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
                 width: '400px',
+                height: '100%',
+                backgroundColor: 'rgb(68,69,97,0.25)',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
                 borderRadius: '30px',
               }}
             />
-            {!hovered && (
-              <Box
-                sx={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  width: '400px',
-                  height: '100%',
-                  backgroundColor: 'rgb(68,69,97,0.25)',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  borderRadius: '30px',
-                }}
-              />
-            )}
-          </Box>
-        </motion.div>
+          )}
+        </Box>
       </Grid>
     </Grid>
   );

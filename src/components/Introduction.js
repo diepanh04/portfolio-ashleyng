@@ -27,7 +27,7 @@ const Introduction = () => {
   const paragraph = {
     fontSize: '18px',
     color: 'rgb(54,55,78)',
-    width: '80%',
+    width: '90%',
     fontFamily: 'Ubuntu, sans-serif'
   }
   const heading = {
@@ -88,53 +88,58 @@ const Introduction = () => {
           <hr style={{ width: '30%', textAlign: 'left', marginLeft: '0', marginTop: '10px', borderColor: 'rgb(68,69,97,0.5)' }} />
       </div>
       <Grid container style={introduction}>
-        <Grid item xs={4}>
-          <motion.div
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-            animate={{ y: hovered ? -20 : 0 }}
-          >
-            <img
-              src={myPhoto}
-              style={{
-                width: '80%',
-                borderRadius: '30px',
-                marginBottom: '20px',
-                boxShadow: '10px 10px rgb(188,189,208)'
-              }}
-            />
-          </motion.div>
-          <div style={infoRow}>
-            <AutoStoriesIcon sx={{ color: 'rgb(68,69,97)' }}/>
-            <Typography style={info}>Miami University</Typography>
-          </div>
-          <div style={infoRow}>
-            <ModeIcon sx={{ color: 'rgb(68,69,97)' }}/>
-            <Typography style={info}>Computer Science Major</Typography>
-          </div>
-          <div style={infoRow}>
-            <SchoolIcon sx={{ color: 'rgb(68,69,97)' }}/>
-            <Typography style={info}>May 2024</Typography>
-          </div>
+        <Grid item container>
+          <Grid item xs={4}>
+            <motion.div
+              onMouseEnter={() => setHovered(true)}
+              onMouseLeave={() => setHovered(false)}
+              animate={{ y: hovered ? -20 : 0 }}
+            >
+              <img
+                src={myPhoto}
+                style={{
+                  width: '80%',
+                  borderRadius: '30px',
+                  marginBottom: '20px',
+                  boxShadow: '10px 10px rgb(188,189,208)'
+                }}
+              />
+            </motion.div>
+            {/* <div style={infoRow}>
+              <AutoStoriesIcon sx={{ color: 'rgb(68,69,97)' }}/>
+              <Typography style={info}>Miami University</Typography>
+            </div>
+            <div style={infoRow}>
+              <ModeIcon sx={{ color: 'rgb(68,69,97)' }}/>
+              <Typography style={info}>Computer Science Major</Typography>
+            </div>
+            <div style={infoRow}>
+              <SchoolIcon sx={{ color: 'rgb(68,69,97)' }}/>
+              <Typography style={info}>May 2024</Typography>
+            </div> */}
+          </Grid>
+          <Grid item xs={8}>
+            <motion.div 
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            viewport={{ once: true }}
+            variants={textAnimation}
+            >
+              <Typography style={paragraph}>
+                Hi, my name is <span style={{ opacity: '0.8', fontWeight: 'bold' }}>Ashley Nguyen</span>.
+                As I embark on my professional growth journey, I am constantly seeking opportunities to apply my skills, acquire new knowledge, establish valuable connections, and explore my true potential.
+                The presence of influential individuals in my life, including my family, friends, and colleagues, serves as a mirror reflecting my personal growth. I am enthusiastic about expanding my network
+                further by connecting with like-minded individuals who are eager to both give and receive. So let's chat!
+              </Typography>
+              <br />
+              <Typography style={paragraph}> 
+              Feel free to explore my website, where I aim to showcase my past experiences and projects. As I continue to evolve, this website will serve as a personal diary, documenting my progress and providing a means for my own reflection.
+              </Typography>
+            </motion.div>
+          </Grid>
         </Grid>
-        <Grid item xs={8}>
-          <motion.div 
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{ once: true }}
-          variants={textAnimation}
-          >
-            <Typography style={paragraph}>
-              Hi, my name is <span style={{ opacity: '0.8', fontWeight: 'bold' }}>Ashley Nguyen</span>.
-              I am an aspiring software engineer who is passionate about clean codes that make positive impacts.
-              I hold great values in user experience and orient my work with a customer centric mindset. 
-            </Typography>
-            <br />
-            <Typography style={paragraph}> 
-              I believe that meaningful human connections and mentorship play important roles in one’s development.
-              I am eager to connect with like-minded individuals who wish to give and to receive.
-            </Typography>
-          </motion.div>
+        <Grid item>
+
         </Grid>
       </Grid>
     </motion.div>

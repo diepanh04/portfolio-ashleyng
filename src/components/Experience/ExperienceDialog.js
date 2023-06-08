@@ -15,7 +15,7 @@ const ExperienceDialog = (props) => {
     fontSize: '20px',
     fontWeight: 'bold'
   }
-
+  console.log(experience.images);
   return (
     <div>
       {experience &&
@@ -49,6 +49,22 @@ const ExperienceDialog = (props) => {
           )
         })}
       </List>
+      <div style={{ textAlign: 'center' }}>
+        {experience.images &&
+          experience.images.map((image) => {
+            return (
+              <img
+                src={image}
+                style={{
+                  height: '250px',
+                  padding: '15px',
+                  border: 'solid white 2px',
+                }}
+              />
+            )
+          })
+        }
+      </div>
     </div>
   )
 }

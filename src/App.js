@@ -53,7 +53,7 @@ function App() {
         position: 'relative'
       }}
     >
-      <img src={logo} style={{ height: '150px', position: 'absolute', top: -50, left: -20, margin: '10px' }} alt="Logo" />
+      <img src={logo} style={{ height: '150px', position: 'absolute', top: -50, left: -20, margin: '10px', position: 'fixed' }} alt="Logo" />
       <ContactInfo />
       <NavBar />
       <Container>
