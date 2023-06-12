@@ -29,7 +29,7 @@ const Introduction = () => {
   const paragraph = {
     fontSize: '18px',
     color: 'rgb(54,55,78)',
-    width: '90%',
+    width: '100%',
     fontFamily: 'Ubuntu, sans-serif'
   }
   const heading = {
@@ -107,25 +107,13 @@ const Introduction = () => {
                 }}
               />
             </motion.div>
-            {/* <div style={infoRow}>
-              <AutoStoriesIcon sx={{ color: 'rgb(68,69,97)' }}/>
-              <Typography style={info}>Miami University</Typography>
-            </div>
-            <div style={infoRow}>
-              <ModeIcon sx={{ color: 'rgb(68,69,97)' }}/>
-              <Typography style={info}>Computer Science Major</Typography>
-            </div>
-            <div style={infoRow}>
-              <SchoolIcon sx={{ color: 'rgb(68,69,97)' }}/>
-              <Typography style={info}>May 2024</Typography>
-            </div> */}
           </Grid>
           <Grid item xs={8}>
             <motion.div 
-            initial={"offscreen"}
-            whileInView={"onscreen"}
-            viewport={{ once: true }}
-            variants={textAnimation}
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              viewport={{ once: true }}
+              variants={textAnimation}
             >
               <Typography style={paragraph}>
                 Hi, my name is <span style={{ opacity: '0.8', fontWeight: 'bold' }}>Ashley Nguyen</span>.
@@ -140,9 +128,25 @@ const Introduction = () => {
             </motion.div>
           </Grid>
         </Grid>
-        {/* <Grid item>
-          <TechStack />
-        </Grid> */}
+        <Grid item container sx={{ marginTop: '30px' }}>
+          <Grid item={4}>
+            <div style={infoRow}>
+              <AutoStoriesIcon sx={{ color: 'rgb(68,69,97)' }}/>
+              <Typography style={info}>Miami University</Typography>
+            </div>
+            <div style={infoRow}>
+              <ModeIcon sx={{ color: 'rgb(68,69,97)' }}/>
+              <Typography style={info}>Computer Science Major</Typography>
+            </div>
+            {/* <div style={infoRow}>
+              <SchoolIcon sx={{ color: 'rgb(68,69,97)' }}/>
+              <Typography style={info}>May 2024</Typography>
+            </div> */}
+          </Grid>
+          <Grid item xs={8} sx={{ marginLeft: '100px' }}>
+            <TechStack />
+          </Grid>
+        </Grid>
       </Grid>
     </motion.div>
   )

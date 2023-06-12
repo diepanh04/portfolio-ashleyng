@@ -86,9 +86,9 @@ const ExperienceItem = (props) => {
             </div>
             <Typography
               sx={{
-                fontSize: '15px',
+                fontSize: '16px',
                 color: 'rgb(68,69,97)',
-                width: '450px',
+                width: '480px',
                 fontFamily: 'Ubuntu, sans-serif'
               }}
             >

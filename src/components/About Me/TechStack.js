@@ -1,87 +1,71 @@
 import React from 'react';
-import { motion } from "framer-motion";
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableRow from '@mui/material/TableRow';
+import Rating from '@mui/material/Rating';
 
 const progLanguages = {
-  "Java": 75,
-  "Javascript": 75,
-  "Ruby": 75,
-  "Python": 50,
-  "C++/C#": 60,
-  "SQL": 50
+  "Java": 4.5,
+  "Javascript": 4.5,
+  "Ruby": 4,
+  "Python": 4,
+  "C++/C#": 4,
+  "SQL": 3.5
 }
 
 const frameworks = {
-  "ReactJS": 80,
-  "NodeJS": 80,
-  "PostgreSQL": 75,
-  "Firebase": 60,
-  ".NET": 50,
+  "ReactJS": 5,
+  "NodeJS": 5,
+  "PostgreSQL": 4,
+  "Firebase": 4,
+  "Express": 4,
+  ".NET": 3,
 }
 
 const tools = {
-  "Git": 80,
-  "Jira": 80,
-  "Bitbucket": 80,
-  "Sidekiq": 65,
+  "Git": 4,
+  "Jira": 5,
+  "Bitbucket": 5,
+  "Sidekiq": 3,
 }
 
 const TechStack = () => {
+  const text = {
+    fontFamily: 'Ubuntu, sans-serif',
+    fontSize: '20px',
+    fontWeight: 'bold',
+    color: 'rgb(68,69,97)',
+  }
   return (
-    <Grid container spacing={8}>
+    <Grid container spacing={10}>
       <Grid item xs={4}>
-        <Table>
-          <TableBody>
-            {Object.entries(progLanguages).map(([key, value]) => {
-              return (
-                <TableRow sx={{ height: '50px' }}>
-                  <TableCell sx={{ border: 'none', height: '10px' }}>
-                    <Typography>{key}</Typography>
-                  </TableCell>
-                  <TableCell sx={{ border: 'none' }}>{value}</TableCell>
-                </TableRow> 
-              )
-            })}
-          </TableBody>
-        </Table>
+        {Object.entries(progLanguages).map(([key, value]) => {
+          return (
+            <>
+              <Typography component="legend" sx={text}>{key}</Typography>
+              <Rating name="read-only" value={value} readOnly />
+            </>
+          )
+        })}
       </Grid>
       <Grid item xs={4}>
-        <Table>
-          <TableBody>
-            {Object.entries(frameworks).map(([key, value]) => {
-              return (
-                <TableRow>
-                  <TableCell sx={{ border: 'none' }}>
-                    <Typography>{key}</Typography>
-                  </TableCell>
-                  <TableCell sx={{ border: 'none' }}>{value}</TableCell>
-                </TableRow> 
-              )
-            })}
-          </TableBody>
-        </Table>
+        {Object.entries(frameworks).map(([key, value]) => {
+          return (
+            <>
+              <Typography component="legend" sx={text}>{key}</Typography>
+              <Rating name="read-only" value={value} readOnly />
+            </>
+          )
+        })}
       </Grid>
       <Grid item xs={4}>
-        <Table>
-          <TableBody>
-            {Object.entries(tools).map(([key, value]) => {
-              return (
-                <TableRow>
-                  <TableCell sx={{ border: 'none' }}>
-                    <Typography>{key}</Typography>
-                  </TableCell>
-                  <TableCell sx={{ border: 'none' }}>{value}</TableCell>
-                </TableRow> 
-              )
-            })}
-          </TableBody>
-        </Table>
+        {Object.entries(tools).map(([key, value]) => {
+          return (
+            <>
+              <Typography component="legend" sx={text}>{key}</Typography>
+              <Rating name="read-only" value={value} readOnly />
+            </>
+          )
+        })}
       </Grid>
     </Grid>
   )
