@@ -1,9 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Typography, Grid, Box, Button, Stack } from '@mui/material/';
+import { Typography, Button, } from '@mui/material/';
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
-import myphoto from '../assets/images/personal.png';
-import leaf from '../assets/images/leaf5.png';
 import leaf2 from '../assets/images/leaf4.png';
 
 const Banner = () => {
@@ -90,12 +88,6 @@ const Banner = () => {
           >
             My Resume
         </Button>
-        {/* <img
-          src={leaf}
-          style={{
-            width: '30vh'
-          }}
-        /> */}
         <hr style={{ width: '40%', marginLeft: '2vh', marginTop: '10px', borderColor: 'rgb(199,222,234,0.8)' }} />
       </div>
     </motion.div>
