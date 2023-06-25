@@ -18,7 +18,7 @@ const ActivityCard = (props) => {
     <Accordion
       expanded={open}
       sx={{
-        backgroundColor: 'rgb(182,202,229,0.5)',
+        backgroundColor: 'rgb(160,161,199,0.5)',
         padding: '30px',
         cursor: 'pointer'
       }}

@@ -1,24 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Typography, Grid, Box, Button, Stack } from '@mui/material/';
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import myphoto from '../assets/images/personal.png';
+import leaf from '../assets/images/leaf5.png';
+import leaf2 from '../assets/images/leaf4.png';
 
 const Banner = () => {
-  const [hovered, setHovered] = useState(false);
-  const imageAnimation = {
-    offscreen: { x: 0 },
-    onscreen: {
-      x: 0,
-      rotate: [-180, 0, 180, 0],
-      transition: {
-        type: 'spring',
-        bounce: 0.25,
-        duration: 2,
-      },
-    },
-  };
-
   const textAnimation = {
     offscreen: { y: 200 },
     onscreen: {
@@ -32,124 +20,85 @@ const Banner = () => {
   };
 
   return (
-    <Grid
-      container
-      sx={{
-        marginLeft: '10%'
-      }}    
-    >
-      <Grid item sx={{ position: 'relative', zIndex: '2' }}>
-        <motion.div initial={'offscreen'} animate={'onscreen'} variants={textAnimation}>
+    <motion.div initial={'offscreen'} animate={'onscreen'} variants={textAnimation} style={{ marginLeft: '15vh' }}>
+      <div style={{ alignItems: 'center', display: 'flex' }}>
+        <div>
           <Typography
-            sx={{
-              color: 'rgb(68,69,97)',
-              fontSize: '20px',
-              fontFamily: 'Ubuntu, sans-serif',
-              marginBottom: '-20px',
-            }}
-            className="gradiant-color"
-          >
-            Hello, world! My name is
-          </Typography>
-          <Typography
-            sx={{
-              fontWeight: 'bold',
-              color: 'rgb(68,69,97)',
-              fontSize: '75px',
-              fontFamily: 'Ubuntu, sans-serif',
-
-            }}
-            className="gradiant-color"
-          >
-            Ashley Nguyen
-          </Typography>
-          <Box
-            sx={{
-              maxWidth: '600px',
-              margin: '0 auto',
-              marginBottom: '15px',
-              backgroundColor: 'rgb(195,198,232,0.5)',
-              padding: '10px',
-              borderRadius: '10px'
-            }}
-          >
-            <Typography
-              sx={{
-                fontWeight: 'bold',
-                color: 'rgb(68,69,97,0.75)',
-                fontSize: '20px',
-                fontFamily: 'Ubuntu, sans-serif',
-                width: '100%'
-              }}
-            >
-              I am an aspiring software engineer who is passionate about clean codes that make positive impacts. I am also
-              a self-motivated learner, a gym aholic, and a food lover.
-            </Typography>
-          </Box>
-          <Stack direction="row" spacing={2}>
-            <Button
-              variant="outlined"
-              endIcon={
-                <FileDownloadOutlinedIcon />
-              }
-              sx={{
-                borderColor: 'rgb(68,69,97)',
-                color: 'rgb(68,69,97)'
-              }}
-              href="https://drive.google.com/file/d/1CBeBRo9s_Uvg6otuqN4PQfA39x7nWC-r/view?usp=sharing"
-              target="_blank"
-            >
-              My Resume
-            </Button>
-          </Stack>
-        </motion.div>
-      </Grid>
-      <Grid
-        item
-        sx={{
-          position: 'absolute',
-          top: '4%',
-          left: '45%',
-          zIndex: '1'
-        }}
-      >
-        <Box
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
           sx={{
-            position: 'relative',
-            width: '30%',
-            margin: '0 auto',
-            borderRadius: '80px',
-            marginBottom: '20px',
+            fontWeight: 'bold',
+            color: 'rgb(68,69,97)',
+            fontSize: '75px',
+            fontFamily: 'Ubuntu, sans-serif',
+
           }}
         >
-          <img
-            src={myphoto}
-            style={{
-              width: '400px',
-              borderRadius: '30px',
+          Hi! I'm Ashley
+        </Typography>
+        <Typography
+          sx={{
+            fontWeight: 'bold',
+            color: 'rgb(68,69,97,0.75)',
+            fontSize: '45px',
+            fontFamily: 'Ubuntu, sans-serif',
+            marginTop: '-25px'
+          }}
+        >
+          A Software Engineer
+        </Typography>
+        </div>
+        <img
+          src={leaf2}
+          style={{
+            width: '12%',
+            marginLeft: '-2vh',
+            marginTop: '-10vh'
+          }}
+        />
+      </div>
+      <Typography
+        sx={{
+          fontWeight: 'bold',
+          color: 'rgb(199,222,234,0.8)',
+          fontSize: '20px',
+          fontFamily: 'Ubuntu, sans-serif',
+        }}
+      >
+        i'm passionate about clean codes that make positive impacts.
+      </Typography>
+      <Typography
+        sx={{
+          fontWeight: 'bold',
+          color: 'rgb(199,222,234,0.8)',
+          fontSize: '20px',
+          fontFamily: 'Ubuntu, sans-serif',
+        }}
+      >
+        and looking for opportunities to grow and make connections.
+      </Typography>
+      <div style={{ alignItems: 'center', display: 'flex', marginTop: '1vh' }}>
+        <Button
+            variant="outlined"
+            endIcon={
+              <FileDownloadOutlinedIcon />
+            }
+            sx={{
+              borderColor: 'rgb(199,222,234,0.8)',
+              color: 'rgb(199,222,234,0.8)'
             }}
-          />
-          {!hovered && (
-            <Box
-              sx={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '400px',
-                height: '100%',
-                backgroundColor: 'rgb(68,69,97,0.25)',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                borderRadius: '30px',
-              }}
-            />
-          )}
-        </Box>
-      </Grid>
-    </Grid>
+            href="https://drive.google.com/file/d/1CBeBRo9s_Uvg6otuqN4PQfA39x7nWC-r/view?usp=sharing"
+            target="_blank"
+          >
+            My Resume
+        </Button>
+        {/* <img
+          src={leaf}
+          style={{
+            width: '30vh'
+          }}
+        /> */}
+        <hr style={{ width: '40%', marginLeft: '2vh', marginTop: '10px', borderColor: 'rgb(199,222,234,0.8)' }} />
+      </div>
+    </motion.div>
   );
 };
 

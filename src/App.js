@@ -44,13 +44,10 @@ function App() {
     // { size: 200, color: 'rgb(183, 211, 223, 0.2)', top: '1000px', left: '150px' },
   ];
 
-  // linear-gradient(55deg, rgba(194,202,210,1) 0%, rgba(144,146,186,1) 50%, rgba(137,138,166,1) 64%)
-  // linear-gradient(72deg, rgba(187,207,217,1) 0%, rgba(146,157,194,1) 40%, rgba(113,104,147,1) 100%)
-
   return (
     <div 
       style={{
-        background: 'linear-gradient(55deg, rgba(194,202,210,1) 0%, rgba(144,146,186,1) 50%, rgba(137,138,166,1) 100%)',
+        background: 'radial-gradient(circle, rgba(163,200,221,1) 0%, rgba(121,123,160,1) 100%)',
         position: 'relative'
       }}
     >
