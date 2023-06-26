@@ -61,7 +61,7 @@ const Banner = () => {
           fontFamily: 'Ubuntu, sans-serif',
         }}
       >
-        i'm passionate about clean codes that make positive impacts.
+        i'm passionate about clean codes that make positive impacts,
       </Typography>
       <Typography
         sx={{

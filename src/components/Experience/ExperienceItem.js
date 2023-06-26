@@ -45,7 +45,7 @@ const ExperienceItem = (props) => {
             onMouseLeave={leaveItem}
             onClick={clickItem}
             style={{
-              backgroundColor: highlight ? 'rgb(188,192,223,0.3)' : 'transparent',
+              backgroundColor: highlight ? 'rgb(163,200,221,0.5)' : 'transparent',
               padding: '10px',
               borderRadius: '10px',
               cursor: 'pointer',
@@ -65,7 +65,7 @@ const ExperienceItem = (props) => {
                 sx={{
                   fontSize: '20px',
                   fontWeight: 'bold',
-                  color: hovered ? 'rgb(219,237,255,0.75)' : 'rgb(68,69,97)',
+                  color: 'rgb(68,69,97)',
                   fontFamily: 'Ubuntu, sans-serif'
                 }}
               >
@@ -78,7 +78,7 @@ const ExperienceItem = (props) => {
                 sx={{
                   fontSize: '20px',
                   fontWeight: 'bold',
-                  color: hovered ? 'rgb(219,237,255,0.75)' : 'rgb(68,69,97)',
+                  color: 'rgb(68,69,97)',
                 }}
               >
                 {experienceInfo.company}
@@ -102,7 +102,7 @@ const ExperienceItem = (props) => {
                     color: 'rgb(68,69,97)',
                     marginRight: '5px',
                     marginTop: '5px',
-                    backgroundColor: 'rgb(184,201,225,0.4)'
+                    backgroundColor: 'rgb(163,200,221,0.5)'
                   }}
                 />
               )

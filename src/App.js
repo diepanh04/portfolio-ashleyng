@@ -27,23 +27,6 @@ function App() {
     zIndex: 1,
   }
 
-  const circles = [
-    // { size: 200, color: 'rgb(228, 220, 207, 0.7)', top: '-50px', left: '-50px' },
-    // { size: 80, color: 'rgb(183, 211, 223, 0.7)', top: '80px', left: '150px' },
-    // { size: 40, color: 'rgb(201, 187, 207, 0.7)', top: '150px', left: '100px' },
-
-    // { size: 300, color: 'rgb(228, 220, 207, 0.2)', top: '200px', left: '450px' },
-    // { size: 200, color: 'rgb(183, 211, 223, 0.2)', top: '450px', left: '800px' },
-    // { size: 100, color: 'rgb(201, 187, 207, 0.2)', top: '80px', left: '800px' },
-
-    // { size: 100, color: 'rgb(201, 187, 207, 0.7)', top: '20px', left: '1350px' },
-    // { size: 50, color: 'rgb(240, 219, 219, 0.7)', top: '130px', left: '1320px' },
-    // { size: 30, color: 'rgb(183, 211, 223, 0.7)', top: '80px', left: '1300px' },
-
-    // { size: 80, color: 'rgb(228, 220, 207, 0.2)', top: '900px', left: '400px' },
-    // { size: 200, color: 'rgb(183, 211, 223, 0.2)', top: '1000px', left: '150px' },
-  ];
-
   return (
     <div 
       style={{
@@ -79,15 +62,6 @@ function App() {
         </Grid>
         </Grid>
       </Container>
-      {circles.map((circle, index) => (
-        <Circle
-          key={index}
-          size={circle.size}
-          color={circle.color}
-          top={circle.top}
-          left={circle.left}
-        />
-      ))}
     </div>
   );
 }

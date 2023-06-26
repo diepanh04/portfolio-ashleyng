@@ -142,7 +142,7 @@ const Experience = () => {
                 }
               }}
               style={{
-                backgroundColor: selectedItem !== null ? 'rgb(188,192,223,0.3)' : 'none',
+                backgroundColor: selectedItem !== null ? 'rgb(163,200,221,0.5)' : 'none',
                 padding: '30px',
                 borderRadius: '20px'
               }}

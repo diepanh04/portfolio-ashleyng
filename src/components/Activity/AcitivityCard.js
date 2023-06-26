@@ -18,7 +18,7 @@ const ActivityCard = (props) => {
     <Accordion
       expanded={open}
       sx={{
-        backgroundColor: 'rgb(160,161,199,0.5)',
+        backgroundColor: 'rgb(160,161,199,0.3)',
         padding: '30px',
         cursor: 'pointer'
       }}
@@ -50,7 +50,7 @@ const ActivityCard = (props) => {
                 <Typography
                   sx={{
                     fontSize: '20px',
-                    color: 'rgb(28,48,68)',
+                    color: 'rgb(51,63,74)',
                     fontWeight: hovered ? 'bold' : 'none',
                     paddingTop: '5px',
                     fontFamily: 'Ubuntu, sans-serif'

@@ -6,6 +6,12 @@ import demoPhoto from  '../../assets/images/goodwatch.png';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 
 const projects = [
+  {
+    title: 'Podcasity',
+    image: demoPhoto,
+    skills: ['Javascript', 'ReactJS', 'NodeJS', 'Express', 'PostgreSQL', 'Firebase'],
+    description: 'A work in progress: An online platform for podcast lovers to come together and share their favourite podcasts. The website includes features such as podcast recommendations, favourite list, episode notes, ...'
+  },
   { 
     title: 'Stocks Searching Tool',
     image: demoPhoto,
