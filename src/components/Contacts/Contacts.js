@@ -14,7 +14,7 @@ const Contacts = () => {
       <Typography
         sx={{
           fontSize: "50px",
-          color: 'rgb(54,55,78)',
+          color: '#707088',
           fontFamily: 'Ubuntu, sans-serif'
         }}
       >
@@ -23,8 +23,7 @@ const Contacts = () => {
       <IconButton
         variant="outlined"
         sx={{
-          borderColor: 'rgb(68,69,97)',
-          color: 'rgb(68,69,97)'
+          color: '#707088'
         }}
         href="https://www.linkedin.com/in/diep-anh-nguyen/"
       >
@@ -33,8 +32,7 @@ const Contacts = () => {
       <IconButton
         variant="outlined"
         sx={{
-          borderColor: 'rgb(68,69,97)',
-          color: 'rgb(68,69,97)'
+          color: '#707088'
         }}
         href="https://github.com/diepanh04"
       >
@@ -43,8 +41,7 @@ const Contacts = () => {
       <IconButton
         variant="outlined"
         sx={{
-          borderColor: 'rgb(68,69,97)',
-          color: 'rgb(68,69,97)'
+          color: '#707088'
         }}
         href="https://dev.to/diepanh04"
       >
@@ -53,8 +50,7 @@ const Contacts = () => {
       <IconButton
         variant="outlined"
         sx={{
-          borderColor: 'rgb(68,69,97)',
-          color: 'rgb(68,69,97)'
+          color: '#707088'
         }}
         href="mailto:ashleydiepanhnguyen@gmail.com"
       >

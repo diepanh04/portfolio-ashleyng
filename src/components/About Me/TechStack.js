@@ -33,7 +33,7 @@ const TechStack = () => {
     fontFamily: 'Ubuntu, sans-serif',
     fontSize: '20px',
     fontWeight: 'bold',
-    color: 'rgb(68,69,97)',
+    color: '#707088',
   }
   return (
     <Grid container spacing={10}>

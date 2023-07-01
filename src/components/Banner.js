@@ -24,7 +24,7 @@ const Banner = () => {
           <Typography
           sx={{
             fontWeight: 'bold',
-            color: 'rgb(68,69,97)',
+            color: '#707088',
             fontSize: '75px',
             fontFamily: 'Ubuntu, sans-serif',
 
@@ -35,7 +35,7 @@ const Banner = () => {
         <Typography
           sx={{
             fontWeight: 'bold',
-            color: 'rgb(68,69,97,0.75)',
+            color: 'rgb(245,109,145,0.75)',
             fontSize: '45px',
             fontFamily: 'Ubuntu, sans-serif',
             marginTop: '-25px'
@@ -56,7 +56,7 @@ const Banner = () => {
       <Typography
         sx={{
           fontWeight: 'bold',
-          color: 'rgb(199,222,234,0.8)',
+          color: 'rgb(74,87,89,0.5)',
           fontSize: '20px',
           fontFamily: 'Ubuntu, sans-serif',
         }}
@@ -66,7 +66,7 @@ const Banner = () => {
       <Typography
         sx={{
           fontWeight: 'bold',
-          color: 'rgb(199,222,234,0.8)',
+          color: 'rgb(74,87,89,0.5)',
           fontSize: '20px',
           fontFamily: 'Ubuntu, sans-serif',
         }}
@@ -80,15 +80,15 @@ const Banner = () => {
               <FileDownloadOutlinedIcon />
             }
             sx={{
-              borderColor: 'rgb(199,222,234,0.8)',
-              color: 'rgb(199,222,234,0.8)'
+              borderColor: 'rgb(74,87,89,0.75)',
+              color: 'rgb(74,87,89,0.75)'
             }}
             href="https://drive.google.com/file/d/1CBeBRo9s_Uvg6otuqN4PQfA39x7nWC-r/view?usp=sharing"
             target="_blank"
           >
             My Resume
         </Button>
-        <hr style={{ width: '40%', marginLeft: '2vh', marginTop: '10px', borderColor: 'rgb(199,222,234,0.8)' }} />
+        <hr style={{ width: '40%', marginLeft: '2vh', marginTop: '10px', borderColor: 'rgb(74,87,89,0.)' }} />
       </div>
     </motion.div>
   );

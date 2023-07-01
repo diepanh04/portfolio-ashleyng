@@ -29,7 +29,7 @@ const NavBar = () => {
                   onMouseEnter={() => setHoveredLink(item.id)}
                   onMouseLeave={() => setHoveredLink(null)}
                   style={{
-                    color: hoveredLink === item.id ? 'white' : 'rgb(199,222,234,0.8)',
+                    color: hoveredLink === item.id ? '#F56D91' : 'rgb(74,87,89,0.75)',
                     marginLeft: '20px',
                     fontSize: '18px',
                     cursor: 'pointer',
@@ -43,7 +43,7 @@ const NavBar = () => {
           </Grid>
         </Toolbar>
       </AppBar>
-      <hr style={{ width: '30%', textAlign: 'right', marginRight: '0', borderColor: 'rgb(199,222,234,0.8)' }} />
+      <hr style={{ width: '30%', textAlign: 'right', marginRight: '0', borderColor: 'rgb(74,87,89,0.3)' }} />
     </>
   );
 };

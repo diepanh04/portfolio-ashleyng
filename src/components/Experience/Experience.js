@@ -97,19 +97,19 @@ const Experience = () => {
         <motion.div
           whileHover={{ rotate: 180 }}
         >
-          <LaptopIcon sx={{ fontSize: '40px', color: 'rgb(68,69,97)' }}/>
+          <LaptopIcon sx={{ fontSize: '40px', color: '#707088' }}/>
         </motion.div>
         <Typography
           sx={{
             fontSize: '30px',
             fontWeight: 'bold',
-            color: 'rgb(68,69,97)',
+            color: '#707088',
             fontFamily: 'Ubuntu, sans-serif'
           }}
         >
           My Experience
         </Typography>
-        <hr style={{ width: '30%', textAlign: 'left', marginLeft: '0', marginTop: '10px', borderColor: 'rgb(68,69,97,0.5)' }} />
+        <hr style={{ width: '30%', textAlign: 'left', marginLeft: '0', marginTop: '10px', borderColor: 'rgb(112,112,136,0.75)' }} />
       </div>
       <Grid container>
         <Grid item xs={6}>
@@ -142,7 +142,7 @@ const Experience = () => {
                 }
               }}
               style={{
-                backgroundColor: selectedItem !== null ? 'rgb(163,200,221,0.5)' : 'none',
+                backgroundColor: selectedItem !== null ? '#F7F5F2' : 'none',
                 padding: '30px',
                 borderRadius: '20px'
               }}

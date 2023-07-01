@@ -19,15 +19,15 @@ const projects = [
     description: 'A web application that displays stock information combining 5 Polygon API endpoints given user input. The program saves all search history to OpenStack and display it by date using SQL.'
   },
   { 
-    title: 'Facebook Mockup',
-    image: demoPhoto,
-    skills: ['Bootstrap', 'Ruby on Rails', 'PostgreSQL'],
-    description: 'A web application inspired by GoodRead that allows users to save movies to WatchList. The website categorizes and shows movie information with other features such as user log-in and movie rating.',
-  },
-  { 
     title: 'GoodWatch',
     image: demoPhoto,
     skills: ['HTML', 'CSS', 'Bootstrap', 'Javascript', 'API', 'Firebase'],
+    description: 'A web application inspired by GoodRead that allows users to save movies to WatchList. The website categorizes and shows movie information with other features such as user log-in and movie rating.',
+  },
+  { 
+    title: 'Facebook Mockup',
+    image: demoPhoto,
+    skills: ['Bootstrap', 'Ruby on Rails', 'PostgreSQL'],
     description: 'A social media web application simulating Facebook. Implemented sign-up, sign-in, post, comment, and like features for multiple user interactions.',
   },
   { 
@@ -72,19 +72,19 @@ const ProjectContainer = () => {
         <motion.div
           whileHover={{ rotate: 180 }}
         >
-          <DashboardIcon sx={{ fontSize: '40px', color: 'rgb(68,69,97)' }}/>
+          <DashboardIcon sx={{ fontSize: '40px', color: '#707088' }}/>
         </motion.div>
         <Typography
           sx={{
             fontSize: '30px',
             fontWeight: 'bold',
-            color: 'rgb(63,63,98)',
+            color: '#707088',
             fontFamily: 'Ubuntu, sans-serif'
           }}
         >
           My Projects
         </Typography>
-        <hr style={{ width: '30%', textAlign: 'left', marginLeft: '0', marginTop: '10px', borderColor: 'rgb(68,69,97,0.5)' }} />
+        <hr style={{ width: '30%', textAlign: 'left', marginLeft: '0', marginTop: '10px', borderColor: 'rgb(112,112,136,0.75)' }} />
       </div>
       <Grid container spacing={3} >
         {projects.map((project, index) => (

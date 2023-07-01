@@ -33,8 +33,8 @@ const ExperienceItem = (props) => {
     <TimelineItem
     >
       <TimelineSeparator>
-        <TimelineDot sx={{ bgcolor: highlight ? 'rgb(184,201,225,0.4)' : 'rgb(68,69,97)' }}/>
-        <TimelineConnector sx={{ bgcolor: highlight ? 'rgb(184,201,225,0.4)' : 'rgb(68,69,97)' }} />
+        <TimelineDot sx={{ bgcolor: '#F56D91' }}/>
+        <TimelineConnector sx={{ bgcolor: 'rgb(74,87,89,0.25)' }} />
       </TimelineSeparator>
       <motion.div
         whileHover={{ scale: 1.05 }}
@@ -45,7 +45,7 @@ const ExperienceItem = (props) => {
             onMouseLeave={leaveItem}
             onClick={clickItem}
             style={{
-              backgroundColor: highlight ? 'rgb(163,200,221,0.5)' : 'transparent',
+              backgroundColor: highlight ? '#F7F5F2' : 'transparent',
               padding: '10px',
               borderRadius: '10px',
               cursor: 'pointer',
@@ -54,7 +54,7 @@ const ExperienceItem = (props) => {
             <Typography
               sx={{
                 fontSize: '15px',
-                color: 'rgb(68,69,97)',
+                color: '#707088',
                 fontFamily: 'Ubuntu, sans-serif'
               }}
             >
@@ -65,7 +65,7 @@ const ExperienceItem = (props) => {
                 sx={{
                   fontSize: '20px',
                   fontWeight: 'bold',
-                  color: 'rgb(68,69,97)',
+                  color: '#707088',
                   fontFamily: 'Ubuntu, sans-serif'
                 }}
               >
@@ -78,7 +78,7 @@ const ExperienceItem = (props) => {
                 sx={{
                   fontSize: '20px',
                   fontWeight: 'bold',
-                  color: 'rgb(68,69,97)',
+                  color: '#707088',
                 }}
               >
                 {experienceInfo.company}
@@ -87,7 +87,7 @@ const ExperienceItem = (props) => {
             <Typography
               sx={{
                 fontSize: '16px',
-                color: 'rgb(68,69,97)',
+                color: 'rgb(74,87,89,0.75)',
                 width: '480px',
                 fontFamily: 'Ubuntu, sans-serif'
               }}
@@ -99,10 +99,10 @@ const ExperienceItem = (props) => {
                 <Chip
                   label={skill}
                   style={{
-                    color: 'rgb(68,69,97)',
+                    color: 'rgb(74,87,89,0.75)',
                     marginRight: '5px',
                     marginTop: '5px',
-                    backgroundColor: 'rgb(163,200,221,0.5)'
+                    backgroundColor: 'rgb(74,87,89,0.1)'
                   }}
                 />
               )

@@ -18,9 +18,9 @@ const ActivityCard = (props) => {
     <Accordion
       expanded={open}
       sx={{
-        backgroundColor: 'rgb(160,161,199,0.3)',
+        backgroundColor: '#F7F5F2',
         padding: '30px',
-        cursor: 'pointer'
+        cursor: 'pointer',
       }}
     >
       <AccordionSummary>
@@ -39,7 +39,7 @@ const ActivityCard = (props) => {
                   sx={{
                     fontSize: '25px',
                     fontWeight: 'bold',
-                    color: 'rgb(51,63,74)',
+                    color: '#707088',
                     fontFamily: 'Ubuntu, sans-serif'
                   }}
                 >
@@ -50,8 +50,8 @@ const ActivityCard = (props) => {
                 <Typography
                   sx={{
                     fontSize: '20px',
-                    color: 'rgb(51,63,74)',
-                    fontWeight: hovered ? 'bold' : 'none',
+                    color: '#F56D91',
+                    fontWeight: 'bold',
                     paddingTop: '5px',
                     fontFamily: 'Ubuntu, sans-serif'
                   }}
@@ -62,7 +62,7 @@ const ActivityCard = (props) => {
               <Grid item xs={12}>
                 <Typography
                   sx={{
-                    color: 'rgb(51,63,74)',
+                    color: 'rgb(74,87,89,0.75)',
                     paddingTop: '5px',
                     fontFamily: 'Ubuntu, sans-serif'
                   }}
@@ -70,7 +70,7 @@ const ActivityCard = (props) => {
                   {activity.description}
                 </Typography>
               </Grid>
-              <Grid item xs={12} textAlign='center' marginTop="15px">
+              <Grid item xs={12} textAlign='center' marginTop="15px" color="rgb(74,87,89,0.75)">
                 {open ? <KeyboardDoubleArrowUpIcon /> : <KeyboardDoubleArrowDownIcon />}
               </Grid>
             </Grid>
@@ -90,7 +90,7 @@ const ActivityCard = (props) => {
                   style={{
                     width: '350px',
                     padding: '15px',
-                    border: 'solid white 2px',
+                    border: 'solid #8D8DAA 1px',
                   }}
                 />
               )

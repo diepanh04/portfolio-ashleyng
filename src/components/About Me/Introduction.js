@@ -23,13 +23,14 @@ const Introduction = () => {
   const info = {
     fontSize: '20px',
     fontWeight: 'bold',
-    color: 'rgb(68,69,97)',
+    color: '#707088',
     fontFamily: 'Ubuntu, sans-serif',
   }
   const paragraph = {
     fontSize: '18px',
-    color: 'rgb(54,55,78)',
+    color: '#707088',
     width: '100%',
+    fontWeight: 'bold',
     fontFamily: 'Ubuntu, sans-serif'
   }
   const heading = {
@@ -75,19 +76,19 @@ const Introduction = () => {
         <motion.div
           whileHover={{ rotate: 180 }}
         >
-          <Face2Icon sx={{ fontSize: '40px', color: 'rgb(68,69,97)' }}/>
+          <Face2Icon sx={{ fontSize: '40px', color: '#707088' }}/>
         </motion.div>
           <Typography
             sx={{
               fontSize: '30px',
               fontWeight: 'bold',
-              color: 'rgb(68,69,97)',
+              color: '#707088',
               fontFamily: 'Ubuntu, sans-serif'
             }}
           >
             About Me
           </Typography>
-          <hr style={{ width: '30%', textAlign: 'left', marginLeft: '0', marginTop: '10px', borderColor: 'rgb(68,69,97,0.5)' }} />
+          <hr style={{ width: '30%', textAlign: 'left', marginLeft: '0', marginTop: '10px', borderColor: 'rgb(112,112,136,0.75)' }} />
       </div>
       <Grid container style={introduction}>
         <Grid item container>
@@ -102,8 +103,6 @@ const Introduction = () => {
                 style={{
                   width: '80%',
                   borderRadius: '30px',
-                  marginBottom: '20px',
-                  boxShadow: '10px 10px rgb(188,189,208)'
                 }}
               />
             </motion.div>
@@ -116,7 +115,7 @@ const Introduction = () => {
               variants={textAnimation}
             >
               <Typography style={paragraph}>
-                Hi, my name is <span style={{ opacity: '0.8', fontWeight: 'bold' }}>Ashley Nguyen</span>.
+                Hi, my name is <span style={{ color: '#F56D91', fontWeight: 'bold' }}>Ashley Nguyen</span>.
                 As I embark on my professional growth journey, I am constantly seeking opportunities to apply my skills, acquire new knowledge, establish valuable connections, and explore my true potential.
                 The presence of influential individuals in my life, including my family, friends, and colleagues, serves as a mirror reflecting my personal growth. I am enthusiastic about expanding my network
                 further by connecting with like-minded individuals who are eager to both give and receive. So let's chat!
@@ -131,11 +130,11 @@ const Introduction = () => {
         <Grid item container sx={{ marginTop: '30px' }}>
           <Grid item={4}>
             <div style={infoRow}>
-              <AutoStoriesIcon sx={{ color: 'rgb(68,69,97)' }}/>
+              <AutoStoriesIcon sx={{ color: '#707088' }}/>
               <Typography style={info}>Miami University</Typography>
             </div>
             <div style={infoRow}>
-              <ModeIcon sx={{ color: 'rgb(68,69,97)' }}/>
+              <ModeIcon sx={{ color: '#707088' }}/>
               <Typography style={info}>Computer Science Major</Typography>
             </div>
             {/* <div style={infoRow}>

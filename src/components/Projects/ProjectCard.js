@@ -19,9 +19,10 @@ const ProjectCard = (props) => {
         container
         sx={{
           padding: '30px',
-          backgroundColor: 'rgb(163,200,221,0.35)',
+          backgroundColor: '#F7F5F2',
           height: '380px',
           position: 'relative',
+          borderRadius: '20px'
         }}
         onMouseOver={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
@@ -29,7 +30,7 @@ const ProjectCard = (props) => {
       >
         <Grid item container>
           <Grid item xs={1}>
-            <FolderOutlinedIcon sx={{ fontSize: '35px', color: 'rgb(63,63,98)' }}/>
+            <FolderOutlinedIcon sx={{ fontSize: '35px', color: '#dc6282' }}/>
           </Grid>
         </Grid>
         <Grid item sx={{ marginTop: '15px' }}>
@@ -37,7 +38,7 @@ const ProjectCard = (props) => {
             sx={{
               fontSize: '25px',
               fontWeight: 'bold',
-              color: hovered ? 'rgb(219,237,255)' : 'rgb(63,63,98)',
+              color: '#707088',
               fontFamily: 'Ubuntu, sans-serif'
             }}
           >
@@ -49,7 +50,7 @@ const ProjectCard = (props) => {
           sx={{
             marginTop: '15px',
             height: '140px',
-            color: 'rgb(65,65,90)',
+            color: 'rgb(74,87,89,0.75)',
           }}
         >
           <Typography style={{ fontFamily: 'Ubuntu, sans-serif' }}>{project.description}</Typography>
@@ -59,7 +60,7 @@ const ProjectCard = (props) => {
           sx={{
             marginTop: '15px',
             maxWidth: '300px',
-            color: 'rgb(51,63,74)',
+            color: '#dc6282',
             fontFamily: 'Ubuntu, sans-serif'
           }}
         >
@@ -70,7 +71,7 @@ const ProjectCard = (props) => {
               sx={{
                 marginRight: '5px',
                 marginBottom: '5px',
-                color: 'rgb(63,63,98)',
+                color: 'rgb(74,87,89,0.75)',
                 fontFamily: 'Ubuntu, sans-serif'
               }}
             ></Chip>
@@ -91,7 +92,8 @@ const ProjectCard = (props) => {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              cursor: 'pointer'
+              cursor: 'pointer',
+              borderRadius: '20px'
             }}
           >
             <LaunchIcon sx={{ fontSize: '35px', color: 'white' }}/>

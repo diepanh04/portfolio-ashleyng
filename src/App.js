@@ -30,7 +30,8 @@ function App() {
   return (
     <div 
       style={{
-        background: 'radial-gradient(circle, rgba(163,200,221,1) 0%, rgba(121,123,160,1) 100%)',
+        // background: 'radial-gradient(circle, rgba(163,200,221,1) 0%, rgba(121,123,160,1) 100%)',
+        background: '#DFDFDE',
         position: 'relative'
       }}
     >

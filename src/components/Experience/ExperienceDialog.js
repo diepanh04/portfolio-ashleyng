@@ -10,7 +10,7 @@ import RadioButtonCheckedOutlinedIcon from '@mui/icons-material/RadioButtonCheck
 const ExperienceDialog = (props) => {
   const {experience} = props;
   const titleStyle = {
-    color: 'rgb(68,69,97)',
+    color: '#707088',
     fontFamily: 'Ubuntu, sans-serif',
     fontSize: '20px',
     fontWeight: 'bold'
@@ -32,7 +32,7 @@ const ExperienceDialog = (props) => {
                 <ListItemIcon>
                   <RadioButtonCheckedOutlinedIcon
                     sx={{
-                      color: 'rgb(68,69,97)',
+                      color: '#F56D91',
                       fontSize: '20px',
                     }}
                   />
@@ -40,7 +40,7 @@ const ExperienceDialog = (props) => {
                 <ListItemText
                   primary={bullet}
                   primaryTypographyProps={{
-                    color: 'rgb(68,69,97)',
+                    color: 'rgb(74,87,89,0.75)',
                     fontFamily: 'Ubuntu, sans-serif'
                   }}
                 />
