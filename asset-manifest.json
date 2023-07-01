@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-ashleyng/static/css/main.49bd9ea0.css",
-    "main.js": "/portfolio-ashleyng/static/js/main.9a2aec5d.js",
+    "main.js": "/portfolio-ashleyng/static/js/main.0d07cb47.js",
     "static/js/787.fb771931.chunk.js": "/portfolio-ashleyng/static/js/787.fb771931.chunk.js",
     "static/media/vsa-3.JPG": "/portfolio-ashleyng/static/media/vsa-3.aa88b68fbd260a6e66a1.JPG",
     "static/media/vsa-2.JPG": "/portfolio-ashleyng/static/media/vsa-2.21c46de07fe9da3c68b2.JPG",
@@ -17,15 +17,15 @@
     "static/media/sw-1.jpg": "/portfolio-ashleyng/static/media/sw-1.f061a2c5ac51a5e54104.jpg",
     "static/media/rakuna-1.jpeg": "/portfolio-ashleyng/static/media/rakuna-1.90f2945d7c3b938aba4e.jpeg",
     "static/media/miami.png": "/portfolio-ashleyng/static/media/miami.dd710e60e4e14b0cbd82.png",
-    "static/media/leaf4.png": "/portfolio-ashleyng/static/media/leaf4.c4c621d736c7c6544dc7.png",
+    "static/media/leaf4.png": "/portfolio-ashleyng/static/media/leaf4.53847f78ed091f0eed4d.png",
     "static/media/logo.png": "/portfolio-ashleyng/static/media/logo.111c60598d406809337e.png",
     "index.html": "/portfolio-ashleyng/index.html",
     "main.49bd9ea0.css.map": "/portfolio-ashleyng/static/css/main.49bd9ea0.css.map",
-    "main.9a2aec5d.js.map": "/portfolio-ashleyng/static/js/main.9a2aec5d.js.map",
+    "main.0d07cb47.js.map": "/portfolio-ashleyng/static/js/main.0d07cb47.js.map",
     "787.fb771931.chunk.js.map": "/portfolio-ashleyng/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.49bd9ea0.css",
-    "static/js/main.9a2aec5d.js"
+    "static/js/main.0d07cb47.js"
   ]
 }
