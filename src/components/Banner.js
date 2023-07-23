@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Typography, Button, } from '@mui/material/';
+import { Typography, Button, Box } from '@mui/material/';
+import { Link } from 'react-router-dom';
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import leaf2 from '../assets/images/leaf4.png';
 
@@ -18,16 +19,14 @@ const Banner = () => {
   };
 
   return (
-    <motion.div initial={'offscreen'} animate={'onscreen'} variants={textAnimation} style={{ marginLeft: '15vh' }}>
-      <div style={{ alignItems: 'center', display: 'flex' }}>
-        <div>
-          <Typography
+    <motion.div initial={'offscreen'} animate={'onscreen'} variants={textAnimation}>
+      <div style={{   }}>
+        <Typography
           sx={{
             fontWeight: 'bold',
-            color: '#707088',
+            color: '#626277',
             fontSize: '75px',
             fontFamily: 'Ubuntu, sans-serif',
-
           }}
         >
           Hi! I'm Ashley
@@ -35,7 +34,7 @@ const Banner = () => {
         <Typography
           sx={{
             fontWeight: 'bold',
-            color: 'rgb(245,109,145,0.75)',
+            color: 'rgb(245,109,145)',
             fontSize: '45px',
             fontFamily: 'Ubuntu, sans-serif',
             marginTop: '-25px'
@@ -43,52 +42,43 @@ const Banner = () => {
         >
           A Software Engineer
         </Typography>
-        </div>
-        <img
-          src={leaf2}
-          style={{
-            width: '12%',
-            marginLeft: '-2vh',
-            marginTop: '-10vh'
+        <Typography
+          sx={{
+            fontWeight: 'bold',
+            color: 'rgb(74,87,89,0.5)',
+            fontSize: '20px',
+            fontFamily: 'Ubuntu, sans-serif',
           }}
-        />
+        >
+          i'm passionate about clean codes that make positive impacts,
+        </Typography>
+        <Typography
+          sx={{
+            fontWeight: 'bold',
+            color: 'rgb(74,87,89,0.5)',
+            fontSize: '20px',
+            fontFamily: 'Ubuntu, sans-serif',
+          }}
+        >
+          and looking for opportunities to grow and make connections.
+        </Typography>
       </div>
-      <Typography
-        sx={{
-          fontWeight: 'bold',
-          color: 'rgb(74,87,89,0.5)',
-          fontSize: '20px',
-          fontFamily: 'Ubuntu, sans-serif',
-        }}
-      >
-        i'm passionate about clean codes that make positive impacts,
-      </Typography>
-      <Typography
-        sx={{
-          fontWeight: 'bold',
-          color: 'rgb(74,87,89,0.5)',
-          fontSize: '20px',
-          fontFamily: 'Ubuntu, sans-serif',
-        }}
-      >
-        and looking for opportunities to grow and make connections.
-      </Typography>
-      <div style={{ alignItems: 'center', display: 'flex', marginTop: '1vh' }}>
-        <Button
-            variant="outlined"
-            endIcon={
-              <FileDownloadOutlinedIcon />
-            }
+      <div style={{ position: 'absolute', marginTop: '1%' }}>
+        <div style={{ position: 'relative', zIndex: 2, border: '2px solid #8D8DAA', padding: '10%', width: '100%' }}>
+          <Typography
+            href='https://drive.google.com/file/d/1CBeBRo9s_Uvg6otuqN4PQfA39x7nWC-r/view?usp=sharing'
             sx={{
-              borderColor: 'rgb(74,87,89,0.75)',
-              color: 'rgb(74,87,89,0.75)'
+              color: '#F7F5F2',
+              fontWeight: 'bold',
+              fontSize: '18px',
+              fontFamily: 'Ubuntu, sans-serif',
+              textDecoration: 'none'
             }}
-            href="https://drive.google.com/file/d/1CBeBRo9s_Uvg6otuqN4PQfA39x7nWC-r/view?usp=sharing"
-            target="_blank"
           >
             My Resume
-        </Button>
-        <hr style={{ width: '40%', marginLeft: '2vh', marginTop: '10px', borderColor: 'rgb(74,87,89,0.)' }} />
+          </Typography>
+        </div>
+        <Box sx={{ backgroundColor: '#F56D91', position: 'absolute', zIndex: 1, top: 5, left: 5, width: '125%', height: '100%' }} />
       </div>
     </motion.div>
   );
