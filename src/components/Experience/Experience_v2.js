@@ -5,7 +5,7 @@ import { timelineItemClasses } from '@mui/lab/TimelineItem';
 import { Typography } from '@mui/material';
 import LaptopIcon from '@mui/icons-material/Laptop';
 import Grid from '@mui/material/Grid';
-import ExperienceItem from './ExperienceItem';
+import ExperienceItem from '../ExperienceItem';
 import ExperienceDialog from './ExperienceDialog';
 import rakPhoto01 from '../../assets/images/rakuna-1.jpeg';
 import rakPhoto02 from '../../assets/images/rakuna-2.JPG';
@@ -97,20 +97,31 @@ const Experience = () => {
         <motion.div
           whileHover={{ rotate: 180 }}
         >
-          <LaptopIcon sx={{ fontSize: '40px', color: '#707088' }}/>
+          {/* <LaptopIcon sx={{ fontSize: '40px', color: '#707088' }}/> */}
         </motion.div>
         <Typography
           sx={{
-            fontSize: '30px',
-            fontWeight: 'bold',
-            color: '#707088',
-            fontFamily: 'Ubuntu, sans-serif'
+            fontSize: '50px',
+            fontFamily: 'Ubuntu, sans-serif',
+            color: '#707088'
           }}
         >
-          My Experience
+          Where I worked
         </Typography>
-        <hr style={{ width: '30%', textAlign: 'left', marginLeft: '0', marginTop: '10px', borderColor: 'rgb(112,112,136,0.75)' }} />
+        {/* <hr style={{ width: '30%', textAlign: 'left', marginLeft: '0', marginTop: '10px', borderColor: 'rgb(112,112,136,0.75)' }} /> */}
       </div>
+      <hr
+          style={{
+            width: '15vh',
+            height: '2%',
+            // textAlign: 'left',
+            // marginLeft: '0',
+            // marginTop: '10px',
+            // marginBottom: '20px',
+            backgroundColor: '#F56D91',
+            border: 'none'
+          }}
+        />
       <Grid container>
         <Grid item xs={6}>
           <Timeline

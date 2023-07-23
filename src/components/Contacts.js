@@ -10,10 +10,10 @@ import LogoDevIcon from '@mui/icons-material/LogoDev';
 
 const Contacts = () => {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ textAlign: "center", justifyContent: 'center' }}>
       <Typography
         sx={{
-          fontSize: "50px",
+          fontSize: "40px",
           color: '#707088',
           fontFamily: 'Ubuntu, sans-serif'
         }}
@@ -27,7 +27,7 @@ const Contacts = () => {
         }}
         href="https://www.linkedin.com/in/diep-anh-nguyen/"
       >
-        <LinkedInIcon sx={{ fontSize: '50px' }}/>
+        <LinkedInIcon sx={{ fontSize: '40px' }}/>
       </IconButton>
       <IconButton
         variant="outlined"
@@ -36,7 +36,7 @@ const Contacts = () => {
         }}
         href="https://github.com/diepanh04"
       >
-        <GitHubIcon sx={{ fontSize: '50px' }}/>
+        <GitHubIcon sx={{ fontSize: '40px' }}/>
       </IconButton>
       <IconButton
         variant="outlined"
@@ -45,7 +45,7 @@ const Contacts = () => {
         }}
         href="https://dev.to/diepanh04"
       >
-        <LogoDevIcon sx={{ fontSize: '50px' }}/>
+        <LogoDevIcon sx={{ fontSize: '40px' }}/>
       </IconButton>
       <IconButton
         variant="outlined"
@@ -54,7 +54,7 @@ const Contacts = () => {
         }}
         href="mailto:ashleydiepanhnguyen@gmail.com"
       >
-        <EmailOutlinedIcon sx={{ fontSize: '50px' }}/>
+        <EmailOutlinedIcon sx={{ fontSize: '40px' }}/>
       </IconButton>
     </div>
   )

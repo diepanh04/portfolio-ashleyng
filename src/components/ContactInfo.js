@@ -13,7 +13,7 @@ const ContactInfo = () => {
   const [hovered, setHovered] = useState(false);
   const icon = {
     fontSize: '30px',
-    color: 'rgb(74,87,89,0.75)',
+    color: 'rgb(74,87,89,0.5)',
     marginRight: '10px'
   }
 

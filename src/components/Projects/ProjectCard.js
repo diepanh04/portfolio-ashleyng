@@ -19,7 +19,7 @@ const ProjectCard = (props) => {
         container
         sx={{
           padding: '30px',
-          backgroundColor: '#F7F5F2',
+          backgroundColor: '#DFDFDE',
           height: '380px',
           position: 'relative',
           borderRadius: '20px'
@@ -38,7 +38,7 @@ const ProjectCard = (props) => {
             sx={{
               fontSize: '25px',
               fontWeight: 'bold',
-              color: '#707088',
+              color: '#626277',
               fontFamily: 'Ubuntu, sans-serif'
             }}
           >

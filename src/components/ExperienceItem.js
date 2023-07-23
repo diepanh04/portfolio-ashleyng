@@ -10,7 +10,7 @@ import { Typography, Chip } from '@mui/material';
 import Link from '@mui/material/Link';
 
 const ExperienceItem = (props) => {
-  const {experienceInfo, selectedItem, handleClick} = props;
+  const {experienceInfo} = props;
   const [hovered, setHovered] = useState(false);
   const divStyle = {
     display: 'flex',
@@ -23,11 +23,6 @@ const ExperienceItem = (props) => {
   const leaveItem = () => {
     setHovered(false);
   }
-  const clickItem = () => {
-    handleClick(experienceInfo);
-    setHovered(true);
-  };
-  const highlight = experienceInfo === selectedItem || hovered;
 
   return (
     <TimelineItem
@@ -43,12 +38,10 @@ const ExperienceItem = (props) => {
           <div
             onMouseEnter={hoverItem}
             onMouseLeave={leaveItem}
-            onClick={clickItem}
             style={{
-              backgroundColor: highlight ? '#F7F5F2' : 'transparent',
+              backgroundColor: hovered ? '#F7F5F2' : 'transparent',
               padding: '10px',
               borderRadius: '10px',
-              cursor: 'pointer',
             }}
           >
             <Typography
@@ -65,7 +58,7 @@ const ExperienceItem = (props) => {
                 sx={{
                   fontSize: '20px',
                   fontWeight: 'bold',
-                  color: '#707088',
+                  color: '#626277',
                   fontFamily: 'Ubuntu, sans-serif'
                 }}
               >
@@ -78,22 +71,13 @@ const ExperienceItem = (props) => {
                 sx={{
                   fontSize: '20px',
                   fontWeight: 'bold',
-                  color: '#707088',
+                  color: '#626277',
                 }}
               >
                 {experienceInfo.company}
               </Link>
             </div>
-            <Typography
-              sx={{
-                fontSize: '16px',
-                color: 'rgb(74,87,89,0.75)',
-                width: '480px',
-                fontFamily: 'Ubuntu, sans-serif'
-              }}
-            >
-              {experienceInfo.description}
-            </Typography>
+
             {experienceInfo.skills.map((skill) => {
               return (
                 <Chip
@@ -116,8 +100,6 @@ const ExperienceItem = (props) => {
 
 ExperienceItem.propTypes = {
   experienceInfo: PropTypes.object.isRequired,
-  selectedItem: PropTypes.object.isRequired,
-  handleClick: PropTypes.func.isRequired
 }
 
 export default ExperienceItem;

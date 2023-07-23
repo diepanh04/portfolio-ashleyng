@@ -6,23 +6,11 @@ import demoPhoto from  '../../assets/images/goodwatch.png';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 
 const projects = [
-  {
-    title: 'Podcasity',
-    image: demoPhoto,
-    skills: ['Javascript', 'ReactJS', 'NodeJS', 'Express', 'PostgreSQL', 'Firebase'],
-    description: 'A work in progress: An online platform for podcast lovers to come together and share their favourite podcasts. The website includes features such as podcast recommendations, favourite list, episode notes, ...'
-  },
   { 
     title: 'Stocks Searching Tool',
     image: demoPhoto,
     skills: ['HTML', 'CSS', 'Javascript', 'JQuery', 'AJAX', 'API'],
     description: 'A web application that displays stock information combining 5 Polygon API endpoints given user input. The program saves all search history to OpenStack and display it by date using SQL.'
-  },
-  { 
-    title: 'GoodWatch',
-    image: demoPhoto,
-    skills: ['HTML', 'CSS', 'Bootstrap', 'Javascript', 'API', 'Firebase'],
-    description: 'A web application inspired by GoodRead that allows users to save movies to WatchList. The website categorizes and shows movie information with other features such as user log-in and movie rating.',
   },
   { 
     title: 'Facebook Mockup',
@@ -68,31 +56,34 @@ const ProjectContainer = () => {
       viewport={{ once: true }}
       variants={animation}  
     >
-      <div style={heading}>
-        <motion.div
-          whileHover={{ rotate: 180 }}
-        >
-          <DashboardIcon sx={{ fontSize: '40px', color: '#707088' }}/>
-        </motion.div>
-        <Typography
-          sx={{
-            fontSize: '30px',
-            fontWeight: 'bold',
-            color: '#707088',
-            fontFamily: 'Ubuntu, sans-serif'
-          }}
-        >
-          My Projects
-        </Typography>
-        <hr style={{ width: '30%', textAlign: 'left', marginLeft: '0', marginTop: '10px', borderColor: 'rgb(112,112,136,0.75)' }} />
-      </div>
-      <Grid container spacing={3} >
-        {projects.map((project, index) => (
-          <Grid item xs={4} key={index}>
-            <ProjectCard project={project} />
-          </Grid>
-        ))}
-      </Grid>
+    <Typography
+      sx={{
+        fontSize: '40px',
+        color: '#626277',
+        fontFamily: 'Ubuntu, sans-serif',
+        textAlign: 'center'
+      }}
+    >
+      Other Projects
+    </Typography>
+    <hr
+      style={{
+        width: '15vh',
+        height: '8PX',
+        textAlign: 'center',
+        marginTop: '10px',
+        marginBottom: '20px',
+        backgroundColor: '#F56D91',
+        border: 'none'
+      }}
+    />
+    <Grid container spacing={3} >
+      {projects.map((project, index) => (
+        <Grid item xs={4} key={index}>
+          <ProjectCard project={project} />
+        </Grid>
+      ))}
+    </Grid>
     </motion.div>
   );
 };
