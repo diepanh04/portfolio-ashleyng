@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const NavBar = ({children}) => {
   const [hoveredLink, setHoveredLink] = useState(null);
   const items = [
-    { name: 'Home', id: '/' },
+    { name: 'Home', id: '' },
     { name: 'About', id: 'about' },
     { name: 'Experience', id: 'experience' },
     { name: 'Projects', id: 'projects' },
