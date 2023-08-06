@@ -30,7 +30,7 @@ function App() {
       <Router>
         <NavBar>
           <Routes>
-            <Route path="/" element={<Homepage />} />
+            <Route path="/portfolio-ashleyng" element={<Homepage />} />
             <Route path='/about' element={<AboutDetails />} />
             <Route path='/experience' element={<ExperienceDetails />} />
             <Route path='/projects/podcasity' element={<ProjectContainer />} />
