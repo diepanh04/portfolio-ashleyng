@@ -52,7 +52,7 @@ const Contacts = () => {
         sx={{
           color: '#707088'
         }}
-        href="mailto:ashleydiepanhnguyen@gmail.com"
+        href="mailto:ashley.diepanh@gmail.com"
       >
         <EmailOutlinedIcon sx={{ fontSize: '40px' }}/>
       </IconButton>

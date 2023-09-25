@@ -1,7 +1,6 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
 import Banner from './Banner';
 import Experience from './Experience';
 import Projects from './Projects';
@@ -27,19 +26,19 @@ const Homepage = () => {
     <div>
       <Container>
         <Grid container>
-          <Grid item sx={{ marginTop: '30vh' }}>
+          <Grid item xs={12} sx={{ marginTop: '20vh' }}>
             <Banner />
           </Grid>
-          <Grid item sx={{ marginTop: '50vh' }}>
+          <Grid item xs={12} sx={{ marginTop: '20vh' }}>
             <About />
           </Grid>
-          <Grid item sx={{ marginTop: '50vh' }}>
+          <Grid item xs={12} sx={{ marginTop: '10vh' }}>
             <Experience />
           </Grid>
-          <Grid item sx={{ marginTop: '30vh' }}>
+          <Grid item xs={12} sx={{ marginTop: '10vh' }}>
             <Projects />
           </Grid>
-          <Grid item sx={{ marginTop: '30vh', textAlign: 'center' }}>
+          <Grid item xs={12} sx={{ marginTop: '10vh', textAlign: 'center' }}>
             <Contacts />
           </Grid>
         </Grid>

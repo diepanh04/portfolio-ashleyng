@@ -24,6 +24,11 @@ import book2 from '../assets/images/book2.jpg';
 import book3 from '../assets/images/book4.jpg';
 import book4 from '../assets/images/book5.jpeg';
 import book5 from '../assets/images/book6.jpg';
+import photo1 from '../assets/images/myphoto1.JPG';
+import photo2 from '../assets/images/myphoto2.jpg';
+import photo3 from '../assets/images/myphoto3.jpg';
+import photo4 from '../assets/images/myphoto4.jpg';
+import photo5 from '../assets/images/myphoto5.jpg';
 
 const styles = {
   divContainer: {
@@ -40,6 +45,24 @@ const styles = {
     fontFamily: 'Ubuntu, sans-serif',
     marginBottom: '10px',
     padding: '10px'
+  },
+  title: {
+    fontSize: '18px',
+    color: '#2B3A55',
+    fontWeight: 'bold',
+    fontFamily: 'Ubuntu, sans-serif',
+    marginBottom: '10px',
+    textDecoration: 'underline'
+  },
+  photo: {
+    height: '100px',
+    marginBottom: '10px',
+    border: '1px #2B3A55 solid'
+  },
+  book: {
+    height: '200px',
+    marginBottom: '10px',
+    border: '1px #2B3A55 solid'
   }
 };
 
@@ -49,7 +72,7 @@ const AboutDetails = () => {
       <Container>
         <div style={{ textAlign: 'center', position: 'relative', position: 0 }}>
           <div style={{ position: 'relative', zIndex: 2 }}>
-            <img src={myPhoto} style={{ width: '20%', borderRadius: '100%' }}/>
+            <img src={myPhoto} style={{ width: '300px', height: '280px', borderRadius: '50%', border: '2px black solid' }}/>
           </div>
           <Box sx={{ position: 'absolute', zIndex: 1, backgroundColor: '#F56D91', width: '100%', left: 50 }} />
         </div> 
@@ -68,17 +91,21 @@ const AboutDetails = () => {
         <Grid container spacing={3}>
           <Grid item xs={4}>
             <div style={styles.divContainer}>
-              <Typography
-                sx={{
-                  fontSize: '18px',
-                  color: '#2B3A55',
-                  fontWeight: 'bold',
-                  fontFamily: 'Ubuntu, sans-serif',
-                  marginBottom: '10px'
-                }}
-              >
+              <Typography sx={styles.title}>
                 Introduction
               </Typography>
+              <div style={{ display: 'flex', gap: '20px' }}>
+                <WorkHistoryIcon sx={{ color: '#2B3A55' }} />
+                <Typography
+                  sx={{
+                    fontSize: '18px',
+                    color: '#2B3A55',
+                    fontFamily: 'Ubuntu, sans-serif'
+                  }}
+                >
+                  Current Software Developer Co-Op at <span style={{ fontWeight: 'bold' }}>PowerShower</span>
+                </Typography>
+              </div>
               <div style={{ display: 'flex', gap: '20px' }}>
                 <WorkHistoryIcon sx={{ color: '#2B3A55' }} />
                 <Typography
@@ -153,52 +180,39 @@ const AboutDetails = () => {
               </div>
             </div>
             <div style={styles.divContainer}>
-              <Typography
-                sx={{
-                  fontSize: '18px',
-                  color: '#2B3A55',
-                  fontWeight: 'bold',
-                  fontFamily: 'Ubuntu, sans-serif',
-                  marginBottom: '10px'
-                }}
-              >
+              <Typography sx={styles.title}>
                 Photos
               </Typography>
+              <Grid container sx={{ textAlign: 'center' }}>
+                <Grid item xs={6}>
+                  <img src={photo1} style={styles.photo} />
+                  <img src={photo2} style={styles.photo} />
+                  <img src={photo3} style={styles.photo} />
+                </Grid>
+                <Grid item xs={6}>
+                  <img src={photo4} style={styles.photo} />
+                  <img src={photo5} style={styles.photo} />
+                </Grid>
+              </Grid>
             </div>
             <div style={styles.divContainer}>
-              <Typography
-                sx={{
-                  fontSize: '18px',
-                  color: '#2B3A55',
-                  fontWeight: 'bold',
-                  fontFamily: 'Ubuntu, sans-serif',
-                  marginBottom: '10px'
-                }}
-              >
+              <Typography sx={styles.title}>
                 Playlist
               </Typography>
             </div>
             <div style={styles.divContainer}>
-              <Typography
-                sx={{
-                  fontSize: '18px',
-                  color: '#2B3A55',
-                  fontWeight: 'bold',
-                  fontFamily: 'Ubuntu, sans-serif',
-                  marginBottom: '10px'
-                }}
-              >
+              <Typography sx={styles.title}>
                 Reads
               </Typography>
               <Grid container sx={{ textAlign: 'center' }}>
                 <Grid item xs={6}>
-                  <img src={book1} style={{ height: '200px', marginBottom: '10px' }} />
-                  <img src={book3} style={{ height: '200px', marginBottom: '10px' }} />
-                  <img src={book5} style={{ height: '200px', marginBottom: '10px' }} />
+                  <img src={book1} style={styles.book} />
+                  <img src={book3} style={styles.book}/>
+                  <img src={book5} style={styles.book} />
                 </Grid>
                 <Grid item xs={6}>
-                  <img src={book2} style={{ height: '200px', marginBottom: '10px' }} />
-                  <img src={book4} style={{ height: '200px', marginBottom: '10px' }} />
+                  <img src={book2} style={styles.book} />
+                  <img src={book4} style={styles.book} />
                 </Grid>
               </Grid>
             </div>
@@ -219,7 +233,10 @@ const AboutDetails = () => {
             <div style={styles.divContainer}>
               <MyAvatar />
               <Typography sx={styles.paragraph}>
-                I gained valuable technical skills and real-world problem-solving experience while working at Rakuna. As an intern, I collaborated with multiple departments and later transitioned to a part-time junior software engineer role, where I focused on completing the Interview Scheduling product line. I'm proud to have made a meaningful impact on the business and I'm excited for future opportunities to grow and make a difference.
+                I gained valuable technical skills and real-world problem-solving experience while working at Rakuna. As an intern,
+                I collaborated with multiple departments and later transitioned to a part-time junior software engineer role,
+                where I focused on completing the Interview Scheduling product line. I'm proud to have made a meaningful impact on
+                the business and I'm excited for future opportunities to grow and make a difference.
               </Typography>
               <Grid container spacing={2}>
                 <Grid item xs={6}>
@@ -235,7 +252,10 @@ const AboutDetails = () => {
             <div style={styles.divContainer}>
               <MyAvatar />
               <Typography sx={styles.paragraph}>
-                I will be serving as the Vice President of the Professional Development department at ISAC (International Student Advisory Council). In this role, I will be responsible for organizing various events, workshops, and student panels that help students prepare for their professional careers by offering assistance with networking, resume review, and interview preparation. Additionally, we will be planning social bonding events like the Sports Tournament that aim to foster cross-cultural friendships at MU.
+                I will be serving as the Vice President of the Professional Development department at ISAC (International Student Advisory Council).
+                In this role, I will be responsible for organizing various events, workshops, and student panels that help students prepare for their
+                professional careers by offering assistance with networking, resume review, and interview preparation. Additionally, we will be planning
+                social bonding events like the Sports Tournament that aim to foster cross-cultural friendships at MU.
               </Typography>
               <Grid container spacing={2}>
                 <Grid item xs={6}>

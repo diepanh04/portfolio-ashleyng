@@ -13,7 +13,7 @@ const ContactInfo = () => {
   const [hovered, setHovered] = useState(false);
   const icon = {
     fontSize: '30px',
-    color: 'rgb(74,87,89,0.5)',
+    color: '#8D8DAA',
     marginRight: '10px'
   }
 
@@ -45,7 +45,7 @@ const ContactInfo = () => {
         style={{
           width: '1px',
           height: '200px',
-          background: 'rgb(74,87,89)',
+          background: '#8D8DAA',
           marginLeft: '35px',
         }}
       ></div>

@@ -6,19 +6,27 @@ import { Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import ExperienceItem from './ExperienceItem';
-import MyButton from './MyButton';
 import { Link } from 'react-router-dom';
 import rakPhoto01 from '../assets/images/rakuna-1.jpeg';
 import rakPhoto02 from '../assets/images/rakuna-2.JPG';
 import rakPhoto03 from '../assets/images/rakuna-3.JPG';
 import fptLogo from '../assets/images/Logo-FPT.jpg';
 import miami from '../assets/images/miami.png';
-import decor1 from '../assets/images/7.png';
 import decor2 from '../assets/images/4.png';
 import demo1 from '../assets/images/rakuna_demo1.png';
 import demo2 from '../assets/images/rakuna_demo2.png';
 
 const experience = [
+  {
+    time: 'September 2023 - Present',
+    title: 'Software Developer Co-Op @',
+    company: 'PowerShower Inc',
+    link: 'https://www.powershower.app/',
+    skills: ['Part-time', 'Co-op', 'Mobile Development'],
+    description: '',
+    bullets: [],
+    images: [fptLogo],
+  },
   {
     time: 'June 2023 - August 2023',
     title: 'Software Engineer Intern @',
@@ -91,12 +99,13 @@ const Experience = () => {
           <div style={{ zIndex: '1' }}> 
             <Typography
               sx={{
-                fontSize: '50px',
+                fontSize: '30px',
                 fontFamily: 'Ubuntu, sans-serif',
                 color: '#626277',
+                fontWeight: 'bold'
               }}
             >
-              Where I worked
+              2. Where I worked
             </Typography>
             <hr
               style={{

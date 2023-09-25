@@ -5,9 +5,6 @@ import Homepage from './components/Homepage';
 import ExperienceDetails from "./components/ExperienceDetails";
 import AboutDetails from './components/AboutDetails';
 import ProjectContainer from "./components/Projects/ProjectContainer";
-import Introduction from './components/About Me/Introduction';
-import ActivityContainer from './components/Activity/ActivityContainer';
-import ContactInfo from './components/ContactInfo';
 import './index.css';
 import logo from './assets/images/logo.png';
 
@@ -34,7 +31,7 @@ function App() {
             <Route path='/about' element={<AboutDetails />} />
             <Route path='/experience' element={<ExperienceDetails />} />
             <Route path='/projects/podcasity' element={<ProjectContainer />} />
-            <Route path='/activity' element={<ActivityContainer />} />
+            <Route path='/activity' element={<ProjectContainer />} />
           </Routes>
         </NavBar>
       </Router>

@@ -38,12 +38,13 @@ const Projects = () => {
         <Grid item xs={6}>
           <Typography
             sx={{
-              fontSize: '50px',
+              fontSize: '30px',
               fontFamily: 'Ubuntu, sans-serif',
               color: '#626277',
+              fontWeight: 'bold'
             }}
           >
-            What I built
+            3. What I built
           </Typography>
           <hr
             style={{
@@ -94,7 +95,7 @@ const Projects = () => {
           >
             <Typography
               sx={{
-                fontSize: '45px',
+                fontSize: '40px',
                 fontFamily: 'Ubuntu, sans-serif',
                 color: '#626277',
               }}
@@ -103,7 +104,7 @@ const Projects = () => {
             </Typography>
             <Box
               sx={{
-                backgroundColor: '#F7F5F2',
+                backgroundColor: '#626277',
                 padding: '2vh',
                 marginTop: '15px',
                 marginBottom: '25px'
@@ -111,7 +112,7 @@ const Projects = () => {
             >
               <Typography
                 sx={{
-                  color: '#626277'
+                  color: 'white'
                 }}
               >
                 Inspired by GoodWatch and GoodRead and realizing a lack of such a community for the podcast market,
@@ -167,7 +168,7 @@ const Projects = () => {
           >
             <Typography
               sx={{
-                fontSize: '45px',
+                fontSize: '40px',
                 fontFamily: 'Ubuntu, sans-serif',
                 color: '#626277',
               }}
@@ -176,7 +177,7 @@ const Projects = () => {
             </Typography>
             <Box
               sx={{
-                backgroundColor: '#F7F5F2',
+                backgroundColor: '#626277',
                 padding: '2vh',
                 marginTop: '15px',
                 marginBottom: '25px',
@@ -184,7 +185,7 @@ const Projects = () => {
             >
               <Typography
                 sx={{
-                  color: '#626277'
+                  color: 'white'
                 }}
               >
                 A web application inspired by GoodRead that allows users to save movies to WatchList.

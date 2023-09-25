@@ -58,10 +58,11 @@ const ProjectContainer = () => {
     >
     <Typography
       sx={{
-        fontSize: '40px',
+        fontSize: '30px',
         color: '#626277',
         fontFamily: 'Ubuntu, sans-serif',
-        textAlign: 'center'
+        textAlign: 'center',
+        fontWeight: 'bold'
       }}
     >
       Other Projects
